@@ -19,10 +19,7 @@
     "email": "support@digitalbazaar.com",
     "url": "http://digitalbazaar.com"
   },
-  "license": {
-    "type": "BSD-3-Clause",
-    "url": "https://github.com/veres-one/did-veres-one/blob/master/LICENSE"
-  },
+  { "license" : "BSD-3-Clause" },
   "bugs": {
     "url": "https://github.com/digitalbazaar/eslint-config-digitalbazaar/issues"
   },
