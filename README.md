@@ -9,9 +9,19 @@ We only export one config that can be used to extend your root .eslintrc.js
 ---
 
 ## installation
+
+if you do not have eslint installed
+```
+npm i -D eslint
+npm i -D digitalbazaar/eslint-config-digitalbazaar#dev
+```
+
+to start a config (choose .eslintrc.js):
+```
+npx eslint --init
+```
+
 currently:
-- [ ] npm i --save-dev digitalbazaar/eslint-config-digitalbazaar#dev
-- [ ] npx eslint --init (if you do not have eslint configured yet and it is already installed) go with .eslintrc.js
 - [ ] inside your .eslintrc.js add "eslint-config-digitalbazaar" to your extends array
 - [ ] then add envs node, browser, or mocha to the relevant dirs
 
