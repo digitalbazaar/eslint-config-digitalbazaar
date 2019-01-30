@@ -1,12 +1,11 @@
 ## eslint-config-digitalbazaar
----
+
 This package provides Digital Bazaar's .eslintrc.js as an extensible shared config.
 
----
+
 ## usage
 We only export one config that can be used to extend your root .eslintrc.js
 
----
 
 ## installation
 
