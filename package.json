@@ -14,7 +14,11 @@
     "eslint",
     "config"
   ],
-  "author": "liminal18",
+  "author": {
+    "name": "Digital Bazaar, Inc.",
+    "email": "support@digitalbazaar.com",
+    "url": "http://digitalbazaar.com"
+  },
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/digitalbazaar/eslint-config-digitalbazaar/issues"
