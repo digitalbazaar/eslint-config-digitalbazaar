@@ -1,0 +1,23 @@
+{
+  "name": "eslint-config-digitalbazaar",
+  "version": "1.0.0",
+  "description": "basic eslint config for digital bazaar projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/digitalbazaar/eslint-config-digitalbazaar.git"
+  },
+  "keywords": [
+    "eslint",
+    "config"
+  ],
+  "author": "liminal18",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/digitalbazaar/eslint-config-digitalbazaar/issues"
+  },
+  "homepage": "https://github.com/digitalbazaar/eslint-config-digitalbazaar#readme"
+}
