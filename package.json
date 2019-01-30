@@ -1,7 +1,7 @@
 {
   "name": "eslint-config-digitalbazaar",
   "version": "0.0.1-0",
-  "description": "basic eslint config for digital bazaar projects",
+  "description": "Digital Bazaar's eslint rules",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -19,7 +19,10 @@
     "email": "support@digitalbazaar.com",
     "url": "http://digitalbazaar.com"
   },
-  "license": "ISC",
+  "license": {
+    "type": "BSD-3-Clause",
+    "url": "https://github.com/veres-one/did-veres-one/blob/master/LICENSE"
+  },
   "bugs": {
     "url": "https://github.com/digitalbazaar/eslint-config-digitalbazaar/issues"
   },
