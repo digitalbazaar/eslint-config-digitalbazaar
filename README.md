@@ -40,7 +40,6 @@ Example .eslintrc.js Vue setup
 
 ```
 module.exports = {
-  root: true,
   extends: ["eslint-config-digitalbazaar/vue"]
 }
 ```
