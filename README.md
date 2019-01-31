@@ -28,6 +28,20 @@ Example .eslintrc.js root setup
 ```
 module.exports = {
   root: true,
-  extends: ["eslint:recommended", "eslint-config-digitalbazaar"]
+  extends: ["eslint-config-digitalbazaar"]
 }
 ```
+
+To use the vue rules you will need to install the vue-eslint-plugin
+```
+npm i -D eslint-plugin-vie
+```
+Example .eslintrc.js Vue setup
+
+```
+module.exports = {
+  root: true,
+  extends: ["eslint-config-digitalbazaar/vue"]
+}
+```
+
