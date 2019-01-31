@@ -7,6 +7,7 @@ module.exports = {
     "sourceType": "module",
   },
   "rules": {
+    "arrow-parens": ["error", "as-needed"],
     "arrow-spacing": "error",
     "block-spacing": ["error", "never"],
     "comma-dangle": ["error", "only-multiline"],
