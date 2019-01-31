@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-digitalbazaar",
-  "version": "0.0.1-0",
+  "version": "1.0.0",
   "description": "Digital Bazaar's eslint rules",
   "main": "index.js",
   "scripts": {
@@ -19,7 +19,7 @@
     "email": "support@digitalbazaar.com",
     "url": "https://digitalbazaar.com"
   },
-  "license" : "BSD-3-Clause",
+  "license": "BSD-3-Clause",
   "bugs": {
     "url": "https://github.com/digitalbazaar/eslint-config-digitalbazaar/issues"
   },
