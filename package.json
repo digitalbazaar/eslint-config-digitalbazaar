@@ -19,7 +19,7 @@
     "email": "support@digitalbazaar.com",
     "url": "https://digitalbazaar.com"
   },
-  "license" : "BSD-3-Clause",
+  "license": "BSD-3-Clause",
   "bugs": {
     "url": "https://github.com/digitalbazaar/eslint-config-digitalbazaar/issues"
   },
