@@ -34,7 +34,7 @@ module.exports = {
 
 To use the vue rules you will need to install the vue-eslint-plugin
 ```
-npm i -D eslint-plugin-vie
+npm i -D eslint-plugin-vue
 ```
 Example .eslintrc.js Vue setup
 
