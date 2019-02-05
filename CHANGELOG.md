@@ -1,5 +1,10 @@
 # eslint-config-digitalbazaar ChangeLog
 
+## 1.3.0 - xxxx
+
+### Changed
+- Set `vue/html-closing-bracket-newline` rule to never for single and multiline.
+
 ## 1.2.0 - 2019-02-04
 
 ### Changed
