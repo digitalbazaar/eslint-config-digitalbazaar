@@ -1,5 +1,10 @@
 # eslint-config-digitalbazaar ChangeLog
 
+## 1.4.0 -
+
+### Changed
+- Set `function-paren-newline` rule so function paranthesis line breaks are consistent.
+
 ## 1.3.0 - 2019-02-05
 
 ### Changed
