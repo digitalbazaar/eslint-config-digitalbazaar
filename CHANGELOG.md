@@ -4,6 +4,7 @@
 
 ### Changed
 - Set `function-paren-newline` rule so function paranthesis line breaks are consistent.
+- Set `operator-linebreak` so line breaks come after operators.
 
 ## 1.3.0 - 2019-02-05
 
