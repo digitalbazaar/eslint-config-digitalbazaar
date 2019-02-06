@@ -46,6 +46,7 @@ module.exports = {
     "no-var": "error",
     "object-curly-spacing": "error",
     "object-shorthand": ["error", "properties"],
+    "operator-linebreak": ["error", "after"],
     "prefer-const": "error",
     "semi": ["error", "always"],
     "semi-spacing": "error",
