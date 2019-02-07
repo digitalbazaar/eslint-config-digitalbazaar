@@ -48,6 +48,7 @@ module.exports = {
     "object-shorthand": ["error", "properties"],
     "operator-linebreak": ["error", "after"],
     "prefer-const": "error",
+    "quotes": ["error", "single"],
     "semi": ["error", "always"],
     "semi-spacing": "error",
     "space-before-blocks": "error",
