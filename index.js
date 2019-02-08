@@ -14,7 +14,6 @@ module.exports = {
     "comma-spacing": "error",
     "curly": "error",
     "eol-last": "error",
-    "function-paren-newline": ["error", "consistent"],
     "key-spacing": ["error", {"beforeColon": false, "afterColon": true}],
     "keyword-spacing": ["error", {"overrides": {
       "catch": {"after": false},
