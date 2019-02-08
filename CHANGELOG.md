@@ -1,5 +1,11 @@
 # eslint-config-digitalbazaar ChangeLog
 
+## 1.5.0 - 2019-02-08
+
+### Changed
+- Remove func-paren rule.
+- Add rule for single quotes.
+
 ## 1.4.0 - 2019-02-06
 
 ### Changed
