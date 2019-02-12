@@ -1,63 +1,63 @@
 module.exports = {
-  "env": {
-    "es6": true,
+  env: {
+    es6: true,
   },
-  "parserOptions": {
-    "ecmaVersion": 2018,
-    "sourceType": "module",
+  parserOptions: {
+    ecmaVersion: 2018,
+    sourceType: 'module',
   },
-  "rules": {
-    "arrow-parens": ["error", "as-needed"],
-    "arrow-spacing": "error",
-    "block-spacing": ["error", "never"],
-    "comma-dangle": ["error", "only-multiline"],
-    "comma-spacing": "error",
-    "curly": "error",
-    "eol-last": "error",
-    "key-spacing": ["error", {"beforeColon": false, "afterColon": true}],
-    "keyword-spacing": ["error", {"overrides": {
-      "catch": {"after": false},
-      "for": {"after": false},
-      "if": {"after": false},
-      "switch": {"after": false},
-      "while": {"after": false}
-      }}],
-    "indent": ["error", 2, {
-      "SwitchCase": 1,
-      "FunctionExpression": {
-        "parameters": 1
+  rules: {
+    'arrow-parens': ['error', 'as-needed'],
+    'arrow-spacing': 'error',
+    'block-spacing': ['error', 'never'],
+    'comma-dangle': ['error', 'only-multiline'],
+    'comma-spacing': 'error',
+    curly: 'error',
+    'eol-last': 'error',
+    'key-spacing': ['error', {beforeColon: false, afterColon: true}],
+    'keyword-spacing': ['error', {overrides: {
+      catch: {after: false},
+      for: {after: false},
+      if: {after: false},
+      switch: {after: false},
+      while: {after: false}
+    }}],
+    indent: ['error', 2, {
+      SwitchCase: 1,
+      FunctionExpression: {
+        parameters: 1
       },
-      "CallExpression": {"arguments": 1}
+      CallExpression: {arguments: 1}
     }],
-    "linebreak-style": ["error", "unix"],
-    "max-len": ["error", 80],
-    "no-const-assign": "error",
-    "no-extra-semi": "error",
-    "no-irregular-whitespace": "error",
-    "no-mixed-spaces-and-tabs": "error",
-    "no-multi-spaces": "error",
-    "no-multiple-empty-lines": ["error", {"max": 1}],
-    "no-spaced-func": "error",
-    "no-trailing-spaces": "error",
-    "no-undef": "error",
-    "no-unused-vars": "error",
-    "no-use-before-define": ["error", { "functions": false, "classes": true }],   
-    "no-var": "error",
-    "object-curly-spacing": "error",
-    "object-shorthand": ["error", "properties"],
-    "operator-linebreak": ["error", "after"],
-    "prefer-const": "error",
-    "quotes": ["error", "single"],
-    "quote-props": ["error", "as-needed"],
-    "semi": ["error", "always"],
-    "semi-spacing": "error",
-    "space-before-blocks": "error",
-    "space-before-function-paren": ["error", {
-      "anonymous": "never",
-      "named": "never",
-      "asyncArrow": "always"
+    'linebreak-style': ['error', 'unix'],
+    'max-len': ['error', 80],
+    'no-const-assign': 'error',
+    'no-extra-semi': 'error',
+    'no-irregular-whitespace': 'error',
+    'no-mixed-spaces-and-tabs': 'error',
+    'no-multi-spaces': 'error',
+    'no-multiple-empty-lines': ['error', {max: 1}],
+    'no-spaced-func': 'error',
+    'no-trailing-spaces': 'error',
+    'no-undef': 'error',
+    'no-unused-vars': 'error',
+    'no-use-before-define': ['error', {functions: false, classes: true}],
+    'no-var': 'error',
+    'object-curly-spacing': 'error',
+    'object-shorthand': ['error', 'properties'],
+    'operator-linebreak': ['error', 'after'],
+    'prefer-const': 'error',
+    quotes: ['error', 'single'],
+    'quote-props': ['error', 'as-needed'],
+    semi: ['error', 'always'],
+    'semi-spacing': 'error',
+    'space-before-blocks': 'error',
+    'space-before-function-paren': ['error', {
+      anonymous: 'never',
+      named: 'never',
+      asyncArrow: 'always'
     }],
-    "space-infix-ops": "error",
-    "space-in-parens": ["error", "never"]
+    'space-infix-ops': 'error',
+    'space-in-parens': ['error', 'never']
   }
-}
+};
