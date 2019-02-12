@@ -48,7 +48,7 @@ module.exports = {
     "operator-linebreak": ["error", "after"],
     "prefer-const": "error",
     "quotes": ["error", "single"],
-    "qoute-props": ["error", "as-needed"],
+    "quote-props": ["error", "as-needed"],
     "semi": ["error", "always"],
     "semi-spacing": "error",
     "space-before-blocks": "error",
