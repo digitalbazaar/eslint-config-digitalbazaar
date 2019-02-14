@@ -47,7 +47,7 @@ module.exports = {
     'object-shorthand': ['error', 'properties'],
     'operator-linebreak': ['error', 'after'],
     'prefer-const': 'error',
-    quotes: ['error', 'single'],
+    quotes: ['error', 'single', {allowTemplateLiterals: true}],
     'quote-props': ['error', 'as-needed'],
     semi: ['error', 'always'],
     'semi-spacing': 'error',
