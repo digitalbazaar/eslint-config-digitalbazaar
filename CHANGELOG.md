@@ -1,5 +1,10 @@
 # eslint-config-digitalbazaar ChangeLog
 
+## 1.6.0 - 2019-02-18
+
+### Changed
+- Add rules related to `quote-props` and template literals.
+
 ## 1.5.0 - 2019-02-08
 
 ### Changed
