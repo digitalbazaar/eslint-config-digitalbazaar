@@ -1,5 +1,10 @@
 # eslint-config-digitalbazaar ChangeLog
 
+## 1.7.0 - 2019-02-22
+
+### Added
+- Config templates that can be used to setup other modules.
+
 ## 1.6.0 - 2019-02-18
 
 ### Changed
