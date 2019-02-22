@@ -19,6 +19,10 @@ To start an eslint config file (choose .eslintrc.js):
 ```
 npx eslint --init
 ```
+or rename a template from the templates dir
+```
+cp node_modules/eslint-config-digitalbazaar/templates/node.js ./.eslintrc.js
+```
 
 Instructions:
 - [ ] inside your .eslintrc.js add "eslint-config-digitalbazaar" to your extends array
