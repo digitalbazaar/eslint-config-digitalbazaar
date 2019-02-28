@@ -23,7 +23,7 @@ module.exports = {
     'jsdoc/no-undefined-types': 1,
     'jsdoc/require-description': 1,
     'jsdoc/require-description-complete-sentence': 1,
-    'jsdoc/require-example': 1,
+    'jsdoc/require-example': 0,
     'jsdoc/require-hyphen-before-param-description': 1,
     'jsdoc/require-param': 1,
     'jsdoc/require-param-description': 1,
