@@ -25,7 +25,7 @@
   },
   "homepage": "https://github.com/digitalbazaar/eslint-config-digitalbazaar#readme",
   "dependencies": {
-    "eslint": "^5.13.0",
-    "eslint-plugin-jsdoc": "^4.1.1"
-  }
+    "eslint": "^5.13.0"
+  },
+  "devDependencies": {}
 }
