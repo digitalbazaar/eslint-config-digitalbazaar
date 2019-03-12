@@ -1,5 +1,10 @@
 # eslint-config-digitalbazaar ChangeLog
 
+## 1.8.0 - 2019-03-12
+
+### Added
+- Linting rules for jsdocs.
+
 ## 1.7.0 - 2019-02-22
 
 ### Added
