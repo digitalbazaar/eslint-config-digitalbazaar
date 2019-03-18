@@ -28,7 +28,7 @@ cp node_modules/eslint-config-digitalbazaar/templates/node.js ./.eslintrc.js
 We export multiple config files that can be used to extend your rules.
 
 All rules can accessed via their shorthand: `digitalbazaar`
-however we recommend using the full path `eslint-config-digitalbazaar`.
+or using the full path `eslint-config-digitalbazaar`.
 
 Eslint's documentation on [shareable configs](https://eslint.org/docs/developer-guide/shareable-configs) can be found here.
 
@@ -67,7 +67,11 @@ module.exports = {
 Our rules do not depend on each other so they are composable:
 ```js
 module.exports = {
-  extends: ['eslint-config-digitalbazaar', 'eslint-config-digitalbazaar/vue', 'eslint-config-digitalbazaar/jsdoc'] // all 3 rule sets in one file
+  extends: [
+    'digitalbazaar',
+    'digitalbazaar/vue',
+    'digitalbazaar/jsdoc'
+  ] // all 3 rule sets in one file
 }
 ```
 
