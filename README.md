@@ -27,7 +27,7 @@ cp node_modules/eslint-config-digitalbazaar/templates/node.js ./.eslintrc.js
 ## Usage
 We export multiple config files that can be used to extend your rules.
 
-All rules can accessed via their shorthand: digitalbazaar.
+All rules can accessed via their shorthand: `digitalbazaar`.
 
 Example .eslintrc.js root setup:
 ```js
