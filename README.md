@@ -1,11 +1,11 @@
 ## eslint-config-digitalbazaar
 
-This package provides Digital Bazaar's .eslintrc.js as an extensible shared config.
+This package provides Digital Bazaar's eslint rules as a set of extendable shared configs.
 
-
-## Usage
-We only export one config that can be used to extend your root .eslintrc.js
-
+We have 3 rule sets currently:
+1. eslint-config-digitalbazaar - our base rules for both node and the browser.
+2. eslint-config-digitalbazaar/vue - our rules for vue projects and browser only.
+3. eslint-config-digitalbazaar/jsdoc - our rules for jsdoc for both node and the browser.
 
 ## Installation
 
@@ -24,15 +24,16 @@ or rename a template from the templates dir
 cp node_modules/eslint-config-digitalbazaar/templates/node.js ./.eslintrc.js
 ```
 
-Instructions:
-- [ ] inside your .eslintrc.js add "eslint-config-digitalbazaar" to your extends array
-- [ ] then add envs node, browser, or mocha to the relevant dirs
+## Usage
+We export multiple config files that can be used to extend your rules.
+
+All rules can accessed via their shorthand: digitalbazaar.
 
 Example .eslintrc.js root setup:
 ```js
 module.exports = {
   root: true,
-  extends: ['eslint-config-digitalbazaar']
+  extends: ['eslint-config-digitalbazaar'] // you may use the shorthand digitalbazaar here
 }
 ```
 
@@ -44,6 +45,18 @@ npm i -D eslint-plugin-vue
 Example .eslintrc.js Vue setup:
 ```js
 module.exports = {
-  extends: ['eslint-config-digitalbazaar/vue']
+  extends: ['digitalbazaar/vue'] // you may use the full module name eslint-config-digitalbazaar/vue here
+}
+```
+
+To use the jsdoc rules you will need to install the eslint-plugin-jsdoc
+```
+npm i -D eslint-plugin-jsdoc
+```
+
+Example .eslintrc.js JSDoc setup:
+```js
+module.exports = {
+  extends: ['digitalbazaar/jsdoc']
 }
 ```
