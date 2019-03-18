@@ -1,5 +1,11 @@
 # eslint-config-digitalbazaar ChangeLog
 
+## 1.9.0 - 2019-02-18
+
+### Changed
+- JSDOC and VUE Rules no longer depend on base rules.
+- Update README to better explain the project.
+
 ## 1.8.0 - 2019-03-12
 
 ### Added
