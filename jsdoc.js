@@ -1,5 +1,4 @@
 module.exports = {
-  extends: ['./index.js'],
   plugins: ['jsdoc'],
   rules: {
     'jsdoc/check-examples': 1,
