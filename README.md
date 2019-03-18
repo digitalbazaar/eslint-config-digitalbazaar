@@ -46,7 +46,7 @@ npm i -D eslint-plugin-vue
 Example .eslintrc.js Vue setup:
 ```js
 module.exports = {
-  extends: ['eslint-config-digitalbazaar/vue'] // you may use the full module name eslint-config-digitalbazaar/vue here
+  extends: ['eslint-config-digitalbazaar/vue']
 }
 ```
 
