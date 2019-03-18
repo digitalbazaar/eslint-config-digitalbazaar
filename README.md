@@ -1,11 +1,11 @@
 ## eslint-config-digitalbazaar
 
-This package provides Digital Bazaar's eslint rules as a set of extendable shared configs.
+This package provides eslint rules used by Digital Bazaar as a set of extendable shared configs.
 
-We have 3 rule sets currently:
-1. eslint-config-digitalbazaar - our base rules for both node and the browser.
-2. eslint-config-digitalbazaar/vue - our rules for vue projects and browser only.
-3. eslint-config-digitalbazaar/jsdoc - our rules for jsdoc for both node and the browser.
+There are 3 rule sets:
+1. eslint-config-digitalbazaar -  Base rules for both node and the browser.
+2. eslint-config-digitalbazaar/vue -  Rules for Vue projects and browser only.
+3. eslint-config-digitalbazaar/jsdoc -  Rules for JSDoc for both node and the browser.
 
 ## Installation
 
@@ -25,9 +25,8 @@ cp node_modules/eslint-config-digitalbazaar/templates/node.js ./.eslintrc.js
 ```
 
 ## Usage
-We export multiple config files that can be used to extend your rules.
 
-All rules can accessed via the shorthand `digitalbazaar`
+All rules can be accessed via the shorthand `digitalbazaar`
 or using the full module name `eslint-config-digitalbazaar`.
 
 Eslint's documentation on [shareable configs](https://eslint.org/docs/developer-guide/shareable-configs) can be found here.
@@ -40,7 +39,7 @@ module.exports = {
 }
 ```
 
-To use the vue rules you will need to install the vue-eslint-plugin
+To use the Vue rules you will need to install the vue-eslint-plugin
 ```
 npm i -D eslint-plugin-vue
 ```
@@ -52,7 +51,7 @@ module.exports = {
 }
 ```
 
-To use the jsdoc rules you will need to install the eslint-plugin-jsdoc
+To use the JSDoc rules you will need to install the eslint-plugin-jsdoc
 ```
 npm i -D eslint-plugin-jsdoc
 ```
@@ -60,11 +59,11 @@ npm i -D eslint-plugin-jsdoc
 Example .eslintrc.js JSDoc setup:
 ```js
 module.exports = {
-  extends: ['digitalbazaar/jsdoc'] // only the jsdoc rules and any rules in parent dirs
+  extends: ['digitalbazaar/jsdoc'] // only the JSDoc rules and any rules in parent dirs
 }
 ```
 
-Our rules do not depend on each other so they are composable:
+The rules do not depend on each other and are composable:
 ```js
 module.exports = {
   extends: [
@@ -75,4 +74,4 @@ module.exports = {
 }
 ```
 
-They can also be used together via [cascade configuration](https://eslint.org/docs/user-guide/configuring).
+The rules can also be used together via [cascade configuration](https://eslint.org/docs/user-guide/configuring).
