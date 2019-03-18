@@ -27,13 +27,14 @@ cp node_modules/eslint-config-digitalbazaar/templates/node.js ./.eslintrc.js
 ## Usage
 We export multiple config files that can be used to extend your rules.
 
-All rules can accessed via their shorthand: `digitalbazaar`.
+All rules can accessed via their shorthand: `digitalbazaar`
+however we recommend using the full path `eslint-config-digitalbazaar`.
 
 Example .eslintrc.js root setup:
 ```js
 module.exports = {
   root: true,
-  extends: ['eslint-config-digitalbazaar'] // you may use the shorthand digitalbazaar here
+  extends: ['eslint-config-digitalbazaar']
 }
 ```
 
@@ -45,7 +46,7 @@ npm i -D eslint-plugin-vue
 Example .eslintrc.js Vue setup:
 ```js
 module.exports = {
-  extends: ['digitalbazaar/vue'] // you may use the full module name eslint-config-digitalbazaar/vue here
+  extends: ['eslint-config-digitalbazaar/vue'] // you may use the full module name eslint-config-digitalbazaar/vue here
 }
 ```
 
@@ -57,6 +58,6 @@ npm i -D eslint-plugin-jsdoc
 Example .eslintrc.js JSDoc setup:
 ```js
 module.exports = {
-  extends: ['digitalbazaar/jsdoc']
+  extends: ['eslint-config-digitalbazaar/jsdoc']
 }
 ```
