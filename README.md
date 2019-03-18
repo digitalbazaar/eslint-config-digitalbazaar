@@ -30,6 +30,8 @@ We export multiple config files that can be used to extend your rules.
 All rules can accessed via their shorthand: `digitalbazaar`
 however we recommend using the full path `eslint-config-digitalbazaar`.
 
+Eslint's documentation on [shareable configs](https://eslint.org/docs/developer-guide/shareable-configs) can be found here.
+
 Example .eslintrc.js root setup:
 ```js
 module.exports = {
@@ -46,7 +48,7 @@ npm i -D eslint-plugin-vue
 Example .eslintrc.js Vue setup:
 ```js
 module.exports = {
-  extends: ['eslint-config-digitalbazaar/vue']
+  extends: ['eslint-config-digitalbazaar/vue'] // only the vue rules and any rules in parent dirs
 }
 ```
 
@@ -58,6 +60,15 @@ npm i -D eslint-plugin-jsdoc
 Example .eslintrc.js JSDoc setup:
 ```js
 module.exports = {
-  extends: ['eslint-config-digitalbazaar/jsdoc']
+  extends: ['eslint-config-digitalbazaar/jsdoc'] // only the jsdoc rules and any rules in parent dirs
 }
 ```
+
+Our rules do not depend on each other so they are composable:
+```js
+module.exports = {
+  extends: ['eslint-config-digitalbazaar', 'eslint-config-digitalbazaar/vue', 'eslint-config-digitalbazaar/jsdoc'] // all 3 rule sets in one file
+}
+```
+
+They can also be used together via [cascade configuration](https://eslint.org/docs/user-guide/configuring).
