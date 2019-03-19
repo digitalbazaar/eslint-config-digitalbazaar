@@ -1,11 +1,12 @@
 # eslint-config-digitalbazaar ChangeLog
 
-## 2.0.0 - 
+## 2.0.0 - 2019-03-19
 
 ### Changed
-- JSDOC and VUE Rules no longer depend on base rules.
+- **BREAKING**: JSDoc and Vue rules no longer depend on base rules. This
+  means that one must explicitly include the base rules as required.
 - Update README to better explain the project.
-- added a template for all the rules.
+- Added a template for all the rules.
 
 ## 1.8.0 - 2019-03-12
 
