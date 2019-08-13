@@ -4,7 +4,7 @@ module.exports = {
   },
   extends: ['plugin:vue/recommended'],
   rules: {
-    'vue/mustache-interpolation-spacing': 'never',
+    'vue/mustache-interpolation-spacing': ['error', 'never'],
     'vue/html-closing-bracket-newline': ['error', {
       singleline: 'never',
       multiline: 'never'
