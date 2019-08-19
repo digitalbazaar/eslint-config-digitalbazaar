@@ -1,5 +1,8 @@
 # eslint-config-digitalbazaar ChangeLog
 
+### Fixed
+- Fixed vue/mustache-interpolation-spacing style.
+
 ## 2.0.0 - 2019-03-19
 
 ### Changed
