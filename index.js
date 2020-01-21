@@ -32,6 +32,7 @@ module.exports = {
     'linebreak-style': ['error', 'unix'],
     'max-len': ['error', 80],
     'no-const-assign': 'error',
+    'no-dupe-keys': 'error',
     'no-extra-semi': 'error',
     'no-irregular-whitespace': 'error',
     'no-mixed-spaces-and-tabs': 'error',
