@@ -1,5 +1,10 @@
 # eslint-config-digitalbazaar ChangeLog
 
+## 2.1.0 - 2020-01-21
+
+### Added
+- Add `no-dupe-key`.
+
 ## 2.0.1 - 2019-08-19
 
 ### Fixed
