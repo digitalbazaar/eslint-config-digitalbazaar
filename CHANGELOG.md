@@ -1,5 +1,12 @@
 # eslint-config-digitalbazaar ChangeLog
 
+### Changed
+- Update eslint dependencies:
+  - Update version.
+  - **BREAKING**: Remove from regular dependencies.
+  - Add to devDependencies.
+  - Add to peerDependencies.
+
 ## 2.1.0 - 2020-01-21
 
 ### Added
