@@ -1,5 +1,7 @@
 # eslint-config-digitalbazaar ChangeLog
 
+## 2.2.0 - 2020-01-28
+
 ### Changed
 - Update eslint dependencies:
   - Update version.
