@@ -10,6 +10,7 @@ module.exports = {
     'arrow-parens': ['error', 'as-needed'],
     'arrow-spacing': 'error',
     'block-spacing': ['error', 'never'],
+    'brace-style': ['error', '1tbs'],
     'comma-dangle': ['error', 'only-multiline'],
     'comma-spacing': 'error',
     curly: 'error',
