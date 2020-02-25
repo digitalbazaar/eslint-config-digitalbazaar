@@ -1,5 +1,7 @@
 # eslint-config-digitalbazaar ChangeLog
 
+## 2.3.0 - 2020-02-25
+
 ### Added
 - Use 'brace-style' of '1tbs'.
 
