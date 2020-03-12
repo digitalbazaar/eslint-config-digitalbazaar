@@ -36,3 +36,7 @@ const color = 'foo';
 if('red' === color) {
 
 }
+
+if(color === 'red') {
+
+}
