@@ -60,6 +60,7 @@ module.exports = {
       asyncArrow: 'always'
     }],
     'space-infix-ops': 'error',
-    'space-in-parens': ['error', 'never']
+    'space-in-parens': ['error', 'never'],
+    yoda: 'error'
   }
 };
