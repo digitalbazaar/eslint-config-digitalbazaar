@@ -1,5 +1,10 @@
 # eslint-config-digitalbazaar ChangeLog
 
+## 2.3.1 -
+
+### Added
+  - A rule to disallow yoda comparisons.
+
 ## 2.3.0 - 2020-02-25
 
 ### Added
