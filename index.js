@@ -32,6 +32,7 @@ module.exports = {
     }],
     'linebreak-style': ['error', 'unix'],
     'max-len': ['error', 80],
+    'no-cond-assign': 'error',
     'no-const-assign': 'error',
     'no-dupe-keys': 'error',
     'no-extra-semi': 'error',
@@ -61,6 +62,7 @@ module.exports = {
     }],
     'space-infix-ops': 'error',
     'space-in-parens': ['error', 'never'],
+    'valid-typeof': 'error',
     yoda: 'error'
   }
 };

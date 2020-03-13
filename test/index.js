@@ -15,8 +15,7 @@ const noConcat = 'a' + 'b';
 
 const r = new RegExp('\\');
 
-/* eslint no-cond-assign: 2 */
-const a = {foo: null}
+const a = {foo: null};
 
 if(a.foo = 'x') {
 
@@ -40,3 +39,5 @@ if('red' === color) {
 if(color === 'red') {
 
 }
+
+typeof color === 'strnig';
