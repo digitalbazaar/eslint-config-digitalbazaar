@@ -1,9 +1,11 @@
 # eslint-config-digitalbazaar ChangeLog
 
-## 2.3.1 -
+## 2.4.0 - 2020-04-29
 
 ### Added
 - A rule to disallow yoda comparisons.
+- Add rule `no-cond-assign`.
+- Add rule `valid-typeof`.
 
 ## 2.3.0 - 2020-02-25
 
