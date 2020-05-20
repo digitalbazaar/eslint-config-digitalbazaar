@@ -1,5 +1,8 @@
 # eslint-config-digitalbazaar ChangeLog
 
+### Changed
+- Support eslint@7.
+
 ## 2.4.0 - 2020-04-29
 
 ### Added
