@@ -42,6 +42,7 @@ module.exports = {
     'no-multi-spaces': 'error',
     'no-multiple-empty-lines': ['error', {max: 1}],
     'no-spaced-func': 'error',
+    'no-return-await': 'error',
     'no-trailing-spaces': 'error',
     'no-undef': 'error',
     'no-unused-vars': 'error',
