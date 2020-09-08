@@ -41,3 +41,10 @@ if(color === 'red') {
 }
 
 typeof color === 'strnig';
+
+// no-loss-of-precision: "error"
+const precisionTest = {
+  noError: 10,
+  error: 9999999999999999,
+  hexError: 0x2386F26FC0FFFF
+};

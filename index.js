@@ -37,6 +37,7 @@ module.exports = {
     'no-dupe-keys': 'error',
     'no-extra-semi': 'error',
     'no-irregular-whitespace': 'error',
+    'no-loss-of-precision': 'error',
     'no-mixed-spaces-and-tabs': 'error',
     'no-multi-spaces': 'error',
     'no-multiple-empty-lines': ['error', {max: 1}],
