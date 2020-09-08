@@ -1,10 +1,16 @@
 # eslint-config-digitalbazaar ChangeLog
 
+### 2.6.1 -
+
+### Changed
+- Change peerDep for `eslint` to `7.1.0` to ensure `no-loss-of-precision` support.
+
 ## 2.6.0 - 2020-09-10
 
 ### Added
-- Add rule `no-loss-of-precision`.
-- Add rule `no-return-await`.
+- Add rule `no-loss-of-precision`: 'error'.
+- Add rule `no-return-await`: 'error'.
+- Add tests for `no-loss-of-precision`.
 
 ## 2.5.0 - 2020-05-20
 
