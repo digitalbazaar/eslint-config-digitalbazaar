@@ -1,3 +1,9 @@
+/**
+ * This module is for testing eslint rules so we have examples
+ * to look at.
+ *
+*/
+
 /* eslint no-unused-vars: 0 */
 
 /* eslint no-implicit-coercion: 2 */
@@ -40,7 +46,10 @@ if(color === 'red') {
 
 }
 
+// this will throw an eslint error
 typeof color === 'strnig';
+// this will not throw an eslint error
+typeof color === 'string';
 
 // no-loss-of-precision: "error"
 const precisionTest = {
