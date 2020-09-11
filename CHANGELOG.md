@@ -3,7 +3,8 @@
 ### 2.6.1 -
 
 ### Changed
-- Change peerDep for `eslint` to `7.1.0` to ensure `no-loss-of-precision` support.
+- Change peerDep for `eslint` to `^7.1.0` to ensure `no-loss-of-precision` support.
+- Change devDep for `eslint` to `^7.1.0` to ensure `no-loss-of-precision` support.
 
 ## 2.6.0 - 2020-09-10
 
