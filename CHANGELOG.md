@@ -1,6 +1,6 @@
 # eslint-config-digitalbazaar ChangeLog
 
-### 2.6.1 -
+### 2.6.1 - 2020-09-11
 
 ### Changed
 - Change peerDep for `eslint` to `^7.1.0` to ensure `no-loss-of-precision` support.
