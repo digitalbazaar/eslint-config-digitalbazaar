@@ -57,3 +57,13 @@ const precisionTest = {
   error: 9999999999999999,
   hexError: 0x2386F26FC0FFFF
 };
+
+// OK
+const foo = {};
+foo.bar = 1;
+// this is common when dealing with bedrock configs
+// and this does **not** produce an error
+foo['some-baz'] = 8;
+
+// error
+foo['bar'] = 2;
