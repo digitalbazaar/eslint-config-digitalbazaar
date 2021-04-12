@@ -14,6 +14,7 @@ module.exports = {
     'comma-dangle': ['error', 'only-multiline'],
     'comma-spacing': 'error',
     curly: 'error',
+    'dot-notation': 'error',
     'eol-last': 'error',
     'key-spacing': ['error', {beforeColon: false, afterColon: true}],
     'keyword-spacing': ['error', {overrides: {

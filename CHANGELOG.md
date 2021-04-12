@@ -1,5 +1,10 @@
 # eslint-config-digitalbazaar ChangeLog
 
+### 2.8.0 - TBD
+
+### Added
+- Add rule for `dot-notation`.
+
 ### 2.7.0 - 2021-04-12
 
 ### Added
