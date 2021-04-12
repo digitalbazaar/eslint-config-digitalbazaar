@@ -70,3 +70,6 @@ jsonProps['bar'] = 2;
 
 // error
 jsonProps['snake_case'] = 5;
+
+// does not error if prop contains @
+jsonProps['@context'] = 'did:context:foo';
