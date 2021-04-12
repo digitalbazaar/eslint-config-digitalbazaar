@@ -1,6 +1,6 @@
 # eslint-config-digitalbazaar ChangeLog
 
-### 2.7.0 - TBD
+### 2.7.0 - 2021-04-12
 
 ### Added
 - Add rule for `one-var`. Require multiple variable declarations per scope.
