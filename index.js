@@ -50,6 +50,7 @@ module.exports = {
     'no-var': 'error',
     'object-curly-spacing': 'error',
     'object-shorthand': ['error', 'properties'],
+    'one-var': ['error', 'never'],
     'operator-linebreak': ['error', 'after'],
     'prefer-const': 'error',
     quotes: ['error', 'single', {allowTemplateLiterals: true}],
