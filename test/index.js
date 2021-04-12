@@ -59,11 +59,14 @@ const precisionTest = {
 };
 
 // OK
-const foo = {};
-foo.bar = 1;
+const jsonProps = {};
+jsonProps.bar = 1;
 // this is common when dealing with bedrock configs
 // and this does **not** produce an error
-foo['some-baz'] = 8;
+jsonProps['some-baz'] = 8;
 
 // error
-foo['bar'] = 2;
+jsonProps['bar'] = 2;
+
+// error
+jsonProps['snake_case'] = 5;
