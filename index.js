@@ -6,6 +6,9 @@ module.exports = {
     ecmaVersion: 2018,
     sourceType: 'module'
   },
+  overrides: [{
+    files: ['*.cjs', '*.mjs'],
+  }],
   rules: {
     'arrow-parens': ['error', 'as-needed'],
     'arrow-spacing': 'error',

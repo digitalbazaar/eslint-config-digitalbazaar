@@ -1,5 +1,10 @@
 # eslint-config-digitalbazaar ChangeLog
 
+### 2.9.0 -
+
+### Added
+- Add override to handle `*.cjs` and `*.mjs` files by default.
+
 ### 2.8.0 - 2021-04-12
 
 ### Added
