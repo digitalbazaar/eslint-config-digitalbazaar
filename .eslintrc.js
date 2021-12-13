@@ -4,5 +4,8 @@ module.exports = {
     node: true,
     es6: true
   },
-  extends: './index.js'
+  extends: [
+    'plugin:eslint-plugin/recommended',
+    './index.js'
+  ]
 };
