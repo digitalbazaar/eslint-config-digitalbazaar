@@ -2,6 +2,7 @@
 
 ### Added
 - Use eslint-plugin-eslint-plugin to self check.
+- Add module preset.
 
 ### Changed
 - Use "test" target to show file errors. This should be improved to do proper

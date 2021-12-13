@@ -63,14 +63,24 @@ module.exports = {
 }
 ```
 
+To use ES module code rather than CommonJS, load the 'module' rules.
+
+Example .eslintrc.js ESM setup:
+```js
+module.exports = {
+  extends: ['digitalbazaar/module'] // only the module rules and any rules in parent dirs
+}
+```
+
 The rules do not depend on each other and are composable:
 ```js
 module.exports = {
   extends: [
     'digitalbazaar',
     'digitalbazaar/vue',
-    'digitalbazaar/jsdoc'
-  ] // all 3 rule sets in one file using shorthand.
+    'digitalbazaar/jsdoc',
+    'digitalbazaar/module'
+  ] // all 4 rule sets in one file using shorthand.
 }
 ```
 
