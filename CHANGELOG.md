@@ -1,5 +1,13 @@
 # eslint-config-digitalbazaar ChangeLog
 
+### Added
+- Use eslint-plugin-eslint-plugin to self check.
+
+### Changed
+- Use "test" target to show file errors. This should be improved to do proper
+  testing.
+- Use "lint" target to self check.
+
 ### 2.8.0 - 2021-04-12
 
 ### Added
