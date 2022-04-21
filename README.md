@@ -40,20 +40,6 @@ module.exports = {
 }
 ```
 
-### Vue
-
-To use the Vue rules you will need to install [`eslint-plugin-vue`](https://eslint.vuejs.org/):
-```
-npm i -D eslint-plugin-vue
-```
-
-Example .eslintrc.js Vue setup:
-```js
-module.exports = {
-  extends: ['digitalbazaar/vue'] // only the vue rules and any rules in parent dirs
-}
-```
-
 ### JSDoc
 
 To use the JSDoc rules you will need to install [`eslint-plugin-jsdoc`](https://github.com/gajus/eslint-plugin-jsdoc):
@@ -81,6 +67,22 @@ module.exports = {
   extends: ['digitalbazaar/module'] // only the module rules and any rules in parent dirs
 }
 ```
+
+### Vue
+
+To use the Vue rules you will need to install [`eslint-plugin-vue`](https://eslint.vuejs.org/):
+```
+npm i -D eslint-plugin-vue
+```
+
+Example .eslintrc.js Vue setup:
+```js
+module.exports = {
+  extends: ['digitalbazaar/vue'] // only the vue rules and any rules in parent dirs
+}
+```
+
+### Composition
 
 The rules do not depend on each other and are composable:
 ```js
