@@ -2,10 +2,11 @@
 
 This package provides eslint rules used by Digital Bazaar as a set of extendable shared configs.
 
-There are 3 rule sets:
-1. eslint-config-digitalbazaar -  Base rules for both node and the browser.
-2. eslint-config-digitalbazaar/vue -  Rules for Vue projects and browser only.
-3. eslint-config-digitalbazaar/jsdoc -  Rules for JSDoc for both node and the browser.
+There are 4 rule sets:
+1. `eslint-config-digitalbazaar`: Base rules for both node and the browser.
+2. `eslint-config-digitalbazaar/jsdoc`: Rules for JSDoc for both node and the browser.
+3. `eslint-config-digitalbazaar/module`: Rules for modules for both node and the browser.
+4. `eslint-config-digitalbazaar/vue`: Rules for Vue projects and browser only.
 
 ## Installation
 
@@ -39,7 +40,9 @@ module.exports = {
 }
 ```
 
-To use the Vue rules you will need to install the vue-eslint-plugin
+### Vue
+
+To use the Vue rules you will need to install [`eslint-plugin-vue`](https://eslint.vuejs.org/):
 ```
 npm i -D eslint-plugin-vue
 ```
@@ -51,7 +54,9 @@ module.exports = {
 }
 ```
 
-To use the JSDoc rules you will need to install the eslint-plugin-jsdoc
+### JSDoc
+
+To use the JSDoc rules you will need to install [`eslint-plugin-jsdoc`](https://github.com/gajus/eslint-plugin-jsdoc):
 ```
 npm i -D eslint-plugin-jsdoc
 ```
@@ -63,7 +68,12 @@ module.exports = {
 }
 ```
 
-To use ES module code rather than CommonJS, load the 'module' rules.
+### Modules
+
+To use ES module code rather than CommonJS, you will need to install [`eslint-plugin-unicorn`](https://github.com/sindresorhus/eslint-plugin-unicorn):
+```
+npm i -D eslint-plugin-unicorn
+```
 
 Example .eslintrc.js ESM setup:
 ```js
@@ -77,9 +87,9 @@ The rules do not depend on each other and are composable:
 module.exports = {
   extends: [
     'digitalbazaar',
-    'digitalbazaar/vue',
-    'digitalbazaar/jsdoc',
     'digitalbazaar/module'
+    'digitalbazaar/jsdoc',
+    'digitalbazaar/vue'
   ] // all 4 rule sets in one file using shorthand.
 }
 ```
