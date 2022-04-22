@@ -3,7 +3,6 @@ module.exports = {
     es2020: true
   },
   parserOptions: {
-    ecmaVersion: 'latest',
     sourceType: 'module'
   },
   plugins: [
