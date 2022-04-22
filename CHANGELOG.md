@@ -1,5 +1,7 @@
 # eslint-config-digitalbazaar ChangeLog
 
+### 2.9.0 - 2022-xx-xx
+
 ### Added
 - Use eslint-plugin-eslint-plugin to self check.
 - Add module preset.
