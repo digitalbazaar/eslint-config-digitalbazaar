@@ -1,7 +1,9 @@
 module.exports = {
   plugins: ['jsdoc'],
   rules: {
-    'jsdoc/check-examples': 1,
+    // Enable once eslint 8 related issue is fixed:
+    // https://github.com/eslint/eslint/issues/14745
+    //'jsdoc/check-examples': 1,
     'jsdoc/check-param-names': 1,
     'jsdoc/check-tag-names': 1,
     'jsdoc/check-types': 1,
