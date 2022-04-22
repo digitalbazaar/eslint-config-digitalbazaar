@@ -89,8 +89,8 @@ The rules do not depend on each other and are composable:
 module.exports = {
   extends: [
     'digitalbazaar',
-    'digitalbazaar/module'
     'digitalbazaar/jsdoc',
+    'digitalbazaar/module'
     'digitalbazaar/vue'
   ] // all 4 rule sets in one file using shorthand.
 }
