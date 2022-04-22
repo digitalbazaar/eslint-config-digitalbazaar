@@ -3,7 +3,6 @@ module.exports = {
     es2022: true
   },
   parserOptions: {
-    ecmaVersion: 'latest',
     sourceType: 'module'
   },
   rules: {
