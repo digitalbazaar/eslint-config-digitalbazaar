@@ -1,5 +1,13 @@
 # eslint-config-digitalbazaar ChangeLog
 
+### 3.0.0 - 2022-xx-xx
+
+### Changed
+- **BREAKING**: Update to `eslint@8`.
+- Use `es2022` environment. Automatically sets `ecmaVersion` to `13` (2022).
+- Disable `jsdoc/check-examples` until
+  [eslint 8 related issue](https://github.com/eslint/eslint/issues/14745) is fixed.
+
 ### 2.9.0 - 2022-04-22
 
 ### Added
