@@ -56,9 +56,9 @@ module.exports = {
 
 ### Modules
 
-To use ES module code rather than CommonJS, you will need to install [`eslint-plugin-unicorn`](https://github.com/sindresorhus/eslint-plugin-unicorn) (<=40 needed until this package updates to eslint 8 support):
+To use ES module code rather than CommonJS, you will need to install [`eslint-plugin-unicorn`](https://github.com/sindresorhus/eslint-plugin-unicorn):
 ```
-npm i -D eslint-plugin-unicorn@40
+npm i -D eslint-plugin-unicorn
 ```
 
 Example .eslintrc.js ESM setup:
