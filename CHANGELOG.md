@@ -1,6 +1,6 @@
 # eslint-config-digitalbazaar ChangeLog
 
-### 3.0.0 - 2022-xx-xx
+### 3.0.0 - 2022-04-25
 
 ### Changed
 - **BREAKING**: Update to `eslint@8`.
