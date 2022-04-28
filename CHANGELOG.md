@@ -1,5 +1,12 @@
 # eslint-config-digitalbazaar ChangeLog
 
+### 4.0.0 - 2022-xx-xx
+
+### Added
+- **BREAKING**: Use
+  [`unicorn/prefer-node-protocol`](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-node-protocol.md)
+  in 'module' rules.
+
 ### 3.0.0 - 2022-04-25
 
 ### Changed
