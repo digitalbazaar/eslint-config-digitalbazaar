@@ -36,7 +36,7 @@ import * as baboon2 from 'baboon-lib-1';
 import 'no-members';
 
 /*
- * * as all goes first
+ * import * as all goes first
  * import {multiple, members} goes second
  * import singleMember goes third
  * import {singleMember goes third too
