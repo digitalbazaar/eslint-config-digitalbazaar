@@ -9,7 +9,6 @@ module.exports = {
     'unicorn'
   ],
   rules: {
-    'unicorn/prefer-module': 'error',
-    'unicorn/prefer-node-protocol': 'error'
+    'unicorn/prefer-module': 'error'
   }
 };

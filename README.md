@@ -97,3 +97,25 @@ module.exports = {
 ```
 
 The rules can also be used together via [cascade configuration](https://eslint.org/docs/user-guide/configuring).
+
+## Other Rules
+
+Other rules that are not included above but can be useful:
+
+### `unicorn/prefer-node-protocol`
+
+Use `node:module` style for Node.js modules.
+
+See [`unicorn/prefer-node-protocol`](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-node-protocol.md).
+
+Requires:
+```
+npm i -D eslint-plugin-unicorn
+```
+
+Rules:
+```js
+  rules: {
+    'unicorn/prefer-node-protocol': 'error'
+  }
+```
