@@ -39,7 +39,7 @@ import 'no-members';
  * import * as all goes first
  * import {multiple, members} goes second
  * import singleMember goes third
- * import {singleMember goes third too
+ * import {singleMember} goes third
  * import 'no-members' goes last
  */
 import * as baboon3 from 'babbon-lib-3';
