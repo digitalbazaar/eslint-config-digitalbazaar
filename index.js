@@ -57,7 +57,11 @@ module.exports = {
     'quote-props': ['error', 'as-needed'],
     semi: ['error', 'always'],
     'semi-spacing': 'error',
-    'sort-imports': ['error', {ignoreCase: true}],
+    'sort-imports': ['error', {
+      allowSeparatedGroups: true,
+      ignoreCase: true,
+      memberSyntaxSortOrder: ['all', 'multiple', 'single', 'none']
+    }],
     'space-before-blocks': 'error',
     'space-before-function-paren': ['error', {
       anonymous: 'never',
