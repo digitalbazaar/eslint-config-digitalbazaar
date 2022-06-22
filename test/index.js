@@ -4,6 +4,50 @@
  *
 */
 
+// demo of the sort imports rules
+// incorrect all
+import * as bAll from 'b.js';
+import * as aAll from 'a.js';
+
+// correct all
+import * as aaAll from 'a.js';
+import * as bbAll from 'b.js';
+
+// incorrect multiple
+import {zed, rat, girl} from 'baboon2000.js';
+
+// correct multiple
+import {girl2, rat2, zed2} from 'baboon2000.js';
+
+// incorrect single
+import {default1} from 'defaulter';
+import aDefault1 from 'adefaulter';
+
+// correct single
+import aDefault2 from 'adefaulter';
+import {default2} from 'defaulter';
+
+// imports with no members must go last
+import 'no-members';
+import * as baboon1 from 'baboon-lib-1';
+
+// imports with no members must go last
+import * as baboon2 from 'baboon-lib-1';
+import 'no-members';
+
+/*
+ * * as all goes first
+ * import {multiple, members} goes second
+ * import singleMember goes third
+ * import {singleMember goes third too
+ * import 'no-members' goes last
+ */
+import * as baboon3 from 'babbon-lib-3';
+import {multi1, multi2, multi3} from 'multi-x-3';
+import single3 from 'has-default-export';
+import {single4} from 'has-single-named-export';
+import 'no-export';
+
 /* eslint no-unused-vars: 0 */
 
 /* eslint no-implicit-coercion: 2 */
