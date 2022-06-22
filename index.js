@@ -57,6 +57,7 @@ module.exports = {
     'quote-props': ['error', 'as-needed'],
     semi: ['error', 'always'],
     'semi-spacing': 'error',
+    'sort-imports': 'error',
     'space-before-blocks': 'error',
     'space-before-function-paren': ['error', {
       anonymous: 'never',
