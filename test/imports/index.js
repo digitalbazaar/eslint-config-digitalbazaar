@@ -22,14 +22,5 @@ import default1 from './noDefault.js';
 
 // this just gets around linter errors with unused vars
 export const used = {
-  d, unresolved, found
+  d, unresolved, found,
 };
-
-export default function d1() {
-
-}
-
-// throws duplicate export
-export default function d2() {
-
-}
