@@ -3,6 +3,10 @@
   "version": "4.0.1-0",
   "description": "Digital Bazaar's eslint rules",
   "main": "index.js",
+  "files": [
+    "[a-z]*.js",
+    "templates/**/[a-z]*.js"
+  ],
   "scripts": {
     "test": "eslint -c index.js **/*.js",
     "lint": "eslint -c index.js --ignore-pattern test/index.js **/*.js"
