@@ -1,6 +1,6 @@
 # eslint-config-digitalbazaar ChangeLog
 
-### 4.0.0 -
+### 4.0.0 - 2022-06-23
 
 ### Added
 - Add rules for [`sort-imports`](https://eslint.org/docs/rules/sort-imports).
