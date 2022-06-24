@@ -1,6 +1,6 @@
 # eslint-config-digitalbazaar ChangeLog
 
-### 4.0.1 - 2022-xx-xx
+### 4.0.1 - 2022-06-23
 
 ### Changed
 - Use `package.json` `files` field.
