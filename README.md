@@ -6,8 +6,7 @@ There are 4 rule sets:
 1. `eslint-config-digitalbazaar`: Base rules for both node and the browser.
 2. `eslint-config-digitalbazaar/jsdoc`: Rules for JSDoc for both node and the browser.
 3. `eslint-config-digitalbazaar/module`: Rules for modules for both node and the browser.
-4. `eslint-config-digitalbazaar/vue`: Rules for Vue 2 projects and browser only.
-5. `eslint-config-digitalbazaar/vue3`: Rules for Vue 3 projects and browser only.
+4. `eslint-config-digitalbazaar/vue`: Rules for Vue projects and browser only.
 
 ## Installation
 
@@ -17,13 +16,13 @@ npm i -D eslint
 npm i -D eslint-config-digitalbazaar
 ```
 
-To start an eslint config file (choose .eslintrc.js):
+To start an eslint config file (choose .eslintrc.cjs):
 ```
 npx eslint --init
 ```
 or rename a template from the templates dir
 ```
-cp node_modules/eslint-config-digitalbazaar/templates/node.js ./.eslintrc.js
+cp node_modules/eslint-config-digitalbazaar/templates/node.js ./.eslintrc.cjs
 ```
 
 ## Usage
@@ -33,12 +32,11 @@ or using the full module name `eslint-config-digitalbazaar`.
 
 Eslint's documentation on [shareable configs](https://eslint.org/docs/developer-guide/shareable-configs) can be found here.
 
-Example .eslintrc.js root setup:
+Example .eslintrc.cjs root setup:
 ```js
 module.exports = {
   root: true,
-  // using full module name
-  extends: ['eslint-config-digitalbazaar']
+  extends: ['eslint-config-digitalbazaar'] // using full module name
 }
 ```
 
@@ -49,11 +47,10 @@ To use the JSDoc rules you will need to install [`eslint-plugin-jsdoc`](https://
 npm i -D eslint-plugin-jsdoc
 ```
 
-Example .eslintrc.js JSDoc setup:
+Example .eslintrc.cjs JSDoc setup:
 ```js
 module.exports = {
-  // only the JSDoc rules and any rules in parent dirs
-  extends: ['digitalbazaar/jsdoc']
+  extends: ['digitalbazaar/jsdoc'] // only the JSDoc rules and any rules in parent dirs
 }
 ```
 
@@ -64,49 +61,39 @@ To use ES module code rather than CommonJS, you will need to install [`eslint-pl
 npm i -D eslint-plugin-unicorn
 ```
 
-Example .eslintrc.js ESM setup:
+Example .eslintrc.cjs ESM setup:
 ```js
 module.exports = {
-  // only the module rules and any rules in parent dirs
-  extends: ['digitalbazaar/module']
+  extends: ['digitalbazaar/module'] // only the module rules and any rules in parent dirs
 }
 ```
 
-### Vue 2
+To use the es6 module import rules you will need to install [`eslint-plugin-import`](https://www.npmjs.com/package/eslint-plugin-import):
+```
+npm i -D eslint-plugin-import
+```
+Example .eslintrc.cjs ESM setup:
+```js
+module.exports = {
+  extends: ['digitalbazaar/import'] // only the import rules and any rules in parent dirs
+}
+```
 
-To use the Vue 2 rules you will need to install [`eslint-plugin-vue`](https://eslint.vuejs.org/):
+
+
+### Vue
+
+To use the Vue rules you will need to install [`eslint-plugin-vue`](https://eslint.vuejs.org/):
 ```
 npm i -D eslint-plugin-vue
 ```
 
-Example .eslintrc.js Vue setup:
+Example .eslintrc.cjs Vue setup:
 ```js
 module.exports = {
-  // only the vue rules and any rules in parent dirs
-  extends: ['digitalbazaar/vue']
+  extends: ['digitalbazaar/vue'] // only the vue rules and any rules in parent dirs
 }
 ```
-
-For command line use you may need to [explicitly enable linting `.vue`
-files](https://eslint.vuejs.org/user-guide/#running-eslint-from-the-command-line).
-
-### Vue 3
-
-To use the Vue 3 rules you will need to install [`eslint-plugin-vue`](https://eslint.vuejs.org/):
-```
-npm i -D eslint-plugin-vue
-```
-
-Example .eslintrc.js Vue setup:
-```js
-module.exports = {
-  // only the vue3 rules and any rules in parent dirs
-  extends: ['digitalbazaar/vue3']
-}
-```
-
-For command line use you may need to [explicitly enable linting `.vue`
-files](https://eslint.vuejs.org/user-guide/#running-eslint-from-the-command-line).
 
 ### Composition
 
@@ -117,8 +104,8 @@ module.exports = {
     'digitalbazaar',
     'digitalbazaar/jsdoc',
     'digitalbazaar/module'
-    'digitalbazaar/vue3'
-  ] // 4 rule sets in one file using shorthand.
+    'digitalbazaar/vue'
+  ] // all 4 rule sets in one file using shorthand.
 }
 ```
 
