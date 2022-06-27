@@ -31,7 +31,7 @@ module.exports = {
     'import/no-deprecated': 'error',
     // warns if a dep is not in the package.json
     'import/no-extraneous-dependencies': 'error',
-    // what is says
+    // disallows exporting members with let & var
     // FIXME: there could be edge cases where we do
     // need mutable exports
     'import/no-mutable-exports': 'error',
