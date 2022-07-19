@@ -5,6 +5,9 @@
 ### Added
 - Add `digitalbazaar/vue3` preset for Vue 3. Use `digitalbazaar/vue` for Vue 2.
 
+### Added
+- Add `digitalbazaar/vue3` preset for Vue 3. Use `digitalbazaar/vue` for Vue 2.
+
 ### Changed
 - Template cleanups.
 
