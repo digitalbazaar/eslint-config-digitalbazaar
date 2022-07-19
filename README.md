@@ -6,7 +6,8 @@ There are 4 rule sets:
 1. `eslint-config-digitalbazaar`: Base rules for both node and the browser.
 2. `eslint-config-digitalbazaar/jsdoc`: Rules for JSDoc for both node and the browser.
 3. `eslint-config-digitalbazaar/module`: Rules for modules for both node and the browser.
-4. `eslint-config-digitalbazaar/vue`: Rules for Vue projects and browser only.
+4. `eslint-config-digitalbazaar/vue`: Rules for Vue 2 projects and browser only.
+5. `eslint-config-digitalbazaar/vue3`: Rules for Vue 3 projects and browser only.
 
 ## Installation
 
@@ -36,7 +37,8 @@ Example .eslintrc.js root setup:
 ```js
 module.exports = {
   root: true,
-  extends: ['eslint-config-digitalbazaar'] // using full module name
+  // using full module name
+  extends: ['eslint-config-digitalbazaar']
 }
 ```
 
@@ -50,7 +52,8 @@ npm i -D eslint-plugin-jsdoc
 Example .eslintrc.js JSDoc setup:
 ```js
 module.exports = {
-  extends: ['digitalbazaar/jsdoc'] // only the JSDoc rules and any rules in parent dirs
+  // only the JSDoc rules and any rules in parent dirs
+  extends: ['digitalbazaar/jsdoc']
 }
 ```
 
@@ -64,13 +67,14 @@ npm i -D eslint-plugin-unicorn
 Example .eslintrc.js ESM setup:
 ```js
 module.exports = {
-  extends: ['digitalbazaar/module'] // only the module rules and any rules in parent dirs
+  // only the module rules and any rules in parent dirs
+  extends: ['digitalbazaar/module']
 }
 ```
 
-### Vue
+### Vue 2
 
-To use the Vue rules you will need to install [`eslint-plugin-vue`](https://eslint.vuejs.org/):
+To use the Vue 2 rules you will need to install [`eslint-plugin-vue`](https://eslint.vuejs.org/):
 ```
 npm i -D eslint-plugin-vue
 ```
@@ -78,7 +82,23 @@ npm i -D eslint-plugin-vue
 Example .eslintrc.js Vue setup:
 ```js
 module.exports = {
-  extends: ['digitalbazaar/vue'] // only the vue rules and any rules in parent dirs
+  // only the vue rules and any rules in parent dirs
+  extends: ['digitalbazaar/vue']
+}
+```
+
+### Vue 3
+
+To use the Vue 3 rules you will need to install [`eslint-plugin-vue`](https://eslint.vuejs.org/):
+```
+npm i -D eslint-plugin-vue
+```
+
+Example .eslintrc.js Vue setup:
+```js
+module.exports = {
+  // only the vue3 rules and any rules in parent dirs
+  extends: ['digitalbazaar/vue3']
 }
 ```
 
@@ -91,8 +111,8 @@ module.exports = {
     'digitalbazaar',
     'digitalbazaar/jsdoc',
     'digitalbazaar/module'
-    'digitalbazaar/vue'
-  ] // all 4 rule sets in one file using shorthand.
+    'digitalbazaar/vue3'
+  ] // 4 rule sets in one file using shorthand.
 }
 ```
 

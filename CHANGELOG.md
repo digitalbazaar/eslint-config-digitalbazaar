@@ -2,6 +2,9 @@
 
 ### 4.1.0 - 2022-xx-xx
 
+### Added
+- Add `digitalbazaar/vue3` preset for Vue 3. Use `digitalbazaar/vue` for Vue 2.
+
 ### Changed
 - Template cleanups.
 
