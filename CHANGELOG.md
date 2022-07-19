@@ -1,5 +1,10 @@
 # eslint-config-digitalbazaar ChangeLog
 
+### 4.1.0 - 2022-xx-xx
+
+### Changed
+- Template cleanups.
+
 ### 4.0.1 - 2022-06-23
 
 ### Changed
