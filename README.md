@@ -87,6 +87,9 @@ module.exports = {
 }
 ```
 
+For command line use you may need to [explicitly enable linting `.vue`
+files](https://eslint.vuejs.org/user-guide/#running-eslint-from-the-command-line).
+
 ### Vue 3
 
 To use the Vue 3 rules you will need to install [`eslint-plugin-vue`](https://eslint.vuejs.org/):
@@ -101,6 +104,9 @@ module.exports = {
   extends: ['digitalbazaar/vue3']
 }
 ```
+
+For command line use you may need to [explicitly enable linting `.vue`
+files](https://eslint.vuejs.org/user-guide/#running-eslint-from-the-command-line).
 
 ### Composition
 
