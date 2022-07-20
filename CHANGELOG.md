@@ -1,6 +1,6 @@
 # eslint-config-digitalbazaar ChangeLog
 
-### 4.1.0 - 2022-xx-xx
+### 4.1.0 - 2022-07-20
 
 ### Added
 - Add `digitalbazaar/vue3` preset for Vue 3. Use `digitalbazaar/vue` for Vue 2.
