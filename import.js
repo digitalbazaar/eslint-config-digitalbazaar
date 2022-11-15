@@ -10,10 +10,6 @@ module.exports = {
     'import'
   ],
   rules: {
-    // if the file path for an import can't be resolved locally error
-    // this rule ignores namespaced npm packages
-    // (this seems to be broken in the plugin)
-    'import/no-unresolved': ['error', {ignore: ['^@']}],
     // Verifies that all named imports are part of the set of named
     // exports in the imported module.
     'import/named': 'error',
