@@ -2,12 +2,14 @@
 
 This package provides eslint rules used by Digital Bazaar as a set of extendable shared configs.
 
-There are 4 rule sets:
+There are 6 rule sets:
 1. `eslint-config-digitalbazaar`: Base rules for both node and the browser.
-2. `eslint-config-digitalbazaar/jsdoc`: Rules for JSDoc for both node and the browser.
-3. `eslint-config-digitalbazaar/module`: Rules for modules for both node and the browser.
-4. `eslint-config-digitalbazaar/vue`: Rules for Vue 2 projects and browser only.
-5. `eslint-config-digitalbazaar/vue3`: Rules for Vue 3 projects and browser only.
+2. `eslint-config-digitalbazaar/import`: Rules for es6 imports in the browser and node.
+3. `eslint-config-digitalbazaar/jsdoc`: Rules for JSDoc for both node and the browser.
+4. `eslint-config-digitalbazaar/module`: Rules for modules for both node and the browser.
+5. `eslint-config-digitalbazaar/vue`: Rules for Vue 2 projects and browser only.
+6. `eslint-config-digitalbazaar/vue3`: Rules for Vue 3 projects and browser only.
+
 
 ## Installation
 
@@ -39,6 +41,21 @@ module.exports = {
   root: true,
   // using full module name
   extends: ['eslint-config-digitalbazaar']
+}
+```
+
+### Imports
+
+To use the import rules you need to install [`eslint-plugin-import`](https://github.com/import-js/eslint-plugin-import):
+
+```
+npm i -D eslint-plugin-import
+```
+
+Example .eslintrc.cjs import setup:
+```js
+module.exports = {
+  extends: ['digitalbazaar/import']
 }
 ```
 
