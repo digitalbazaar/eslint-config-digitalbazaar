@@ -1,5 +1,10 @@
 # eslint-config-digitalbazaar ChangeLog
 
+### 4.2.0 -
+
+### Added
+- Add rules for es6 imports using `eslint-plugin-import`.
+
 ### 4.1.0 - 2022-07-20
 
 ### Added
