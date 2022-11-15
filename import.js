@@ -33,9 +33,6 @@ module.exports = {
     // warns if a dep is not in the package.json
     'import/no-extraneous-dependencies': 'error',
     // disallows exporting members with let & var
-    // FIXME: there could be edge cases where we do
-    // need mutable exports
-    'import/no-mutable-exports': 'error',
     // throw if you import something more than once in a file/module
     'import/no-duplicates': 'error'
   }
