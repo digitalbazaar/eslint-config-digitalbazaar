@@ -3,7 +3,8 @@
 ### 4.2.0 -
 
 ### Added
-- Add rules for es6 imports using `eslint-plugin-import`.
+- Add `digitalbazaar/import` preset. Uses `eslint-plugin-import` rules to
+  check ES6 imports.
 
 ### 4.1.0 - 2022-07-20
 
