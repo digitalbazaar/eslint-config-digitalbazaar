@@ -1,6 +1,6 @@
 # eslint-config-digitalbazaar ChangeLog
 
-### 4.2.0 -
+### 4.2.0 - 2022-11-28
 
 ### Added
 - Add `digitalbazaar/import` preset. Uses `eslint-plugin-import` rules to
