@@ -7,6 +7,7 @@
   - `jsdoc/newline-after-description` changed to `jsdoc/tag-lines` rule.
   - `eslint-plugin-jsdoc` >= 42 now required to support newer `tag-lines`
     options.
+  - Add optional peer dependency version on `eslint-plugin-jsdoc@42`.
 
 ### 4.2.0 - 2022-11-28
 
