@@ -34,6 +34,12 @@
     "eslint-plugin-eslint-plugin": "^4.1.0"
   },
   "peerDependencies": {
-    "eslint": "^8.14.0"
+    "eslint": "^8.14.0",
+    "eslint-plugin-jsdoc": "^42.0.0"
+  },
+  "peerDependenciesMeta": {
+    "eslint-plugin-jsdoc": {
+      "optional": true
+    }
   }
 }
