@@ -1,5 +1,13 @@
 # eslint-config-digitalbazaar ChangeLog
 
+### 5.0.0 - 2023-xx-xx
+
+### Changed
+- **BREAKING**: Update for `eslint-plugin-jsdoc@42`.
+  - `jsdoc/newline-after-description` changed to `jsdoc/tag-lines` rule.
+  - `eslint-plugin-jsdoc` >= 42 now required to support newer `tag-lines`
+    options.
+
 ### 4.2.0 - 2022-11-28
 
 ### Added
