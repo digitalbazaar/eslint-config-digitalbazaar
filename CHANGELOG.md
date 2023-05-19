@@ -1,6 +1,6 @@
 # eslint-config-digitalbazaar ChangeLog
 
-### 5.0.0 - 2023-xx-xx
+### 5.0.0 - 2023-05-18
 
 ### Changed
 - **BREAKING**: Update for `eslint-plugin-jsdoc@42`.
