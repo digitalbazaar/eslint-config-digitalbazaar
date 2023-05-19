@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-digitalbazaar",
-  "version": "5.0.0",
+  "version": "5.0.1-0",
   "description": "Digital Bazaar's eslint rules",
   "main": "index.js",
   "files": [
