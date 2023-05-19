@@ -1,5 +1,10 @@
 # eslint-config-digitalbazaar ChangeLog
 
+### 5.0.1 - 2023-05-xx
+
+### Fixed
+- Fix peer dependency version.
+
 ### 5.0.0 - 2023-05-18
 
 ### Changed
