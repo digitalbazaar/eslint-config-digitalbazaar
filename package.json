@@ -35,7 +35,7 @@
   },
   "peerDependencies": {
     "eslint": "^8.14.0",
-    "eslint-plugin-jsdoc": "^42.0.0"
+    "eslint-plugin-jsdoc": ">=42.0.0"
   },
   "peerDependenciesMeta": {
     "eslint-plugin-jsdoc": {
