@@ -1,5 +1,10 @@
 # eslint-config-digitalbazaar ChangeLog
 
+### 5.0.2 -
+
+### Fixed
+- Turn off `vue/multi-word-component-names`.
+
 ### 5.0.1 - 2023-05-19
 
 ### Fixed
