@@ -8,6 +8,7 @@ module.exports = {
     'vue/html-closing-bracket-newline': ['error', {
       singleline: 'never',
       multiline: 'never'
-    }]
+    }],
+    'vue/multi-word-component-names': 'off'
   }
 };
