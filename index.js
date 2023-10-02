@@ -30,7 +30,10 @@ module.exports = {
       },
       CallExpression: {arguments: 1}
     }],
-    'linebreak-style': ['error', 'unix'],
+    'linebreak-style': [
+      'error',
+      (process.platform === 'win32' ? 'windows' : 'unix')
+    ],
     'max-len': ['error', 80],
     'no-cond-assign': 'error',
     'no-const-assign': 'error',
