@@ -15,7 +15,7 @@ There are 6 rule sets:
 
 If you do not have eslint installed:
 ```
-npm i -D eslint
+npm i -D eslint@8
 npm i -D eslint-config-digitalbazaar
 ```
 
