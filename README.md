@@ -13,11 +13,12 @@ There are 6 rule sets:
 
 ## Installation
 
-If you do not have eslint installed:
+For `npm >= 7`:
 ```
-npm i -D eslint@8
 npm i -D eslint-config-digitalbazaar
 ```
+
+For `npm < 7` you may need to install `eslint` matching the peerDependencies for this library.
 
 To start an eslint config file:
 ```
