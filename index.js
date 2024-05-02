@@ -33,7 +33,8 @@ module.exports = {
     'linebreak-style': ['error', 'unix'],
     'max-len': ['error', {
       code: 80,
-      ignorePattern: '\\* SPDX-License-Identifier: '
+      ignorePattern: '\\* SPDX-License-Identifier: ',
+      ignoreUrls: true
     }],
     'no-cond-assign': 'error',
     'no-const-assign': 'error',
