@@ -1,6 +1,6 @@
 # eslint-config-digitalbazaar ChangeLog
 
-### 5.x.x - 2024-mm-dd
+### 5.2.0 - 2024-05-02
 
 ### Changed
 - Ignore long URLs.
