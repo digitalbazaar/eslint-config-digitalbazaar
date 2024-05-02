@@ -1,5 +1,11 @@
 # eslint-config-digitalbazaar ChangeLog
 
+### 5.1.0 - 2024-05-xx
+
+### Changed
+- Ingore `SPDX-License-Identifier` comment lengths. The spec requires one line
+  which can be long when using multiple custom ids.
+
 ### 5.0.1 - 2023-05-19
 
 ### Fixed
