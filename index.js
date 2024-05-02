@@ -31,7 +31,10 @@ module.exports = {
       CallExpression: {arguments: 1}
     }],
     'linebreak-style': ['error', 'unix'],
-    'max-len': ['error', 80],
+    'max-len': ['error', {
+      code: 80,
+      ignorePattern: '\\* SPDX-License-Identifier: '
+    }],
     'no-cond-assign': 'error',
     'no-const-assign': 'error',
     'no-dupe-keys': 'error',
