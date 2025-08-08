@@ -1,80 +1,94 @@
-module.exports = {
-  env: {
-    es2022: true
+import js from '@eslint/js';
+import stylistic from '@stylistic/eslint-plugin';
+
+export default [
+  js.configs.recommended,
+  {
+    languageOptions: {
+      ecmaVersion: 2022,
+      sourceType: 'module'
+    },
+    rules: {
+      curly: 'error',
+      'dot-notation': 'error',
+      'no-empty-pattern': ['error', {allowObjectPatternsAsParameters: true}],
+      'no-spaced-func': 'error',
+      'no-use-before-define': ['error', {functions: false, classes: true}],
+      'no-var': 'error',
+      'object-shorthand': ['error', 'properties'],
+      'one-var': ['error', 'never'],
+      'prefer-const': 'error',
+      'sort-imports': ['error', {
+        allowSeparatedGroups: true,
+        ignoreCase: true,
+        memberSyntaxSortOrder: ['all', 'multiple', 'single', 'none']
+      }],
+      yoda: 'error',
+      // deprecated in v8.46.0
+      'no-return-await': 'error',
+    }
   },
-  parserOptions: {
-    sourceType: 'module'
-  },
-  rules: {
-    'arrow-parens': ['error', 'as-needed'],
-    'arrow-spacing': 'error',
-    'block-spacing': ['error', 'never'],
-    'brace-style': ['error', '1tbs'],
-    'comma-dangle': ['error', 'only-multiline'],
-    'comma-spacing': 'error',
-    curly: 'error',
-    'dot-notation': 'error',
-    'eol-last': 'error',
-    'key-spacing': ['error', {beforeColon: false, afterColon: true}],
-    'keyword-spacing': ['error', {overrides: {
-      catch: {after: false},
-      for: {after: false},
-      if: {after: false},
-      switch: {after: false},
-      while: {after: false}
-    }}],
-    indent: ['error', 2, {
-      SwitchCase: 1,
-      FunctionExpression: {
-        parameters: 1
-      },
-      CallExpression: {arguments: 1}
-    }],
-    'linebreak-style': ['error', 'unix'],
-    'max-len': ['error', {
-      code: 80,
-      ignorePattern: '\\* SPDX-License-Identifier: ',
-      ignoreUrls: true
-    }],
-    'no-cond-assign': 'error',
-    'no-const-assign': 'error',
-    'no-dupe-keys': 'error',
-    'no-extra-semi': 'error',
-    'no-irregular-whitespace': 'error',
-    'no-loss-of-precision': 'error',
-    'no-mixed-spaces-and-tabs': 'error',
-    'no-multi-spaces': 'error',
-    'no-multiple-empty-lines': ['error', {max: 1}],
-    'no-return-await': 'error',
-    'no-spaced-func': 'error',
-    'no-trailing-spaces': 'error',
-    'no-undef': 'error',
-    'no-unused-vars': 'error',
-    'no-use-before-define': ['error', {functions: false, classes: true}],
-    'no-var': 'error',
-    'object-curly-spacing': 'error',
-    'object-shorthand': ['error', 'properties'],
-    'one-var': ['error', 'never'],
-    'operator-linebreak': ['error', 'after'],
-    'prefer-const': 'error',
-    quotes: ['error', 'single', {allowTemplateLiterals: true}],
-    'quote-props': ['error', 'as-needed'],
-    semi: ['error', 'always'],
-    'semi-spacing': 'error',
-    'sort-imports': ['error', {
-      allowSeparatedGroups: true,
-      ignoreCase: true,
-      memberSyntaxSortOrder: ['all', 'multiple', 'single', 'none']
-    }],
-    'space-before-blocks': 'error',
-    'space-before-function-paren': ['error', {
-      anonymous: 'never',
-      named: 'never',
-      asyncArrow: 'always'
-    }],
-    'space-infix-ops': 'error',
-    'space-in-parens': ['error', 'never'],
-    'valid-typeof': 'error',
-    yoda: 'error'
+  {
+    // stylistic rules
+    // https://eslint.style/rules
+    plugins: {
+      '@stylistic': stylistic
+    },
+    rules: {
+      '@stylistic/arrow-parens': ['error', 'as-needed'],
+      '@stylistic/arrow-spacing': 'error',
+      '@stylistic/block-spacing': ['error', 'never'],
+      '@stylistic/brace-style': ['error', '1tbs'],
+      '@stylistic/comma-dangle': ['error', 'only-multiline'],
+      '@stylistic/comma-spacing': 'error',
+      '@stylistic/eol-last': 'error',
+      '@stylistic/key-spacing': ['error', {
+        beforeColon: false,
+        afterColon: true
+      }],
+      '@stylistic/keyword-spacing': ['error', {overrides: {
+        catch: {after: false},
+        for: {after: false},
+        if: {after: false},
+        switch: {after: false},
+        while: {after: false}
+      }}],
+      '@stylistic/indent': ['error', 2, {
+        SwitchCase: 1,
+        FunctionExpression: {
+          parameters: 1
+        },
+        CallExpression: {arguments: 1}
+      }],
+      '@stylistic/linebreak-style': ['error', 'unix'],
+      '@stylistic/max-len': ['error', {
+        code: 80,
+        ignorePattern: '\\* SPDX-License-Identifier: ',
+        ignoreUrls: true,
+        //ignoreRegExpLiterals: true
+      }],
+      '@stylistic/no-extra-semi': 'error',
+      '@stylistic/no-mixed-spaces-and-tabs': 'error',
+      '@stylistic/no-multi-spaces': 'error',
+      '@stylistic/no-multiple-empty-lines': ['error', {max: 1}],
+      '@stylistic/no-trailing-spaces': 'error',
+      '@stylistic/object-curly-spacing': 'error',
+      '@stylistic/operator-linebreak': ['error', 'after'],
+      '@stylistic/quotes': ['error', 'single', {
+        allowTemplateLiterals: 'always'
+      }],
+      '@stylistic/quote-props': ['error', 'as-needed'],
+      '@stylistic/semi': ['error', 'always'],
+      '@stylistic/semi-spacing': 'error',
+      '@stylistic/space-before-blocks': 'error',
+      '@stylistic/space-before-function-paren': ['error', {
+        anonymous: 'never',
+        named: 'never',
+        asyncArrow: 'always',
+        catch: 'never'
+      }],
+      '@stylistic/space-infix-ops': 'error',
+      '@stylistic/space-in-parens': ['error', 'never']
+    }
   }
-};
+];

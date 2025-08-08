@@ -1,9 +1,15 @@
-module.exports = {
-  env: {
-    browser: true
+import digitalbazaar from 'eslint-config-digitalbazaar';
+import digitalbazaarVue3 from 'eslint-config-digitalbazaar/vue3';
+import globals from 'globals';
+
+export default [
+  {
+    languageOptions: {
+      globals: {
+        ...globals.browser
+      }
+    }
   },
-  extends: [
-    'digitalbazaar',
-    'digitalbazaar/vue3'
-  ]
-};
+  ...digitalbazaar,
+  ...digitalbazaarVue3
+];

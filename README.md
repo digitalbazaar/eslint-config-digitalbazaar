@@ -10,7 +10,6 @@ There are 6 rule sets:
 5. `eslint-config-digitalbazaar/vue`: Rules for Vue 2 projects and browser only.
 6. `eslint-config-digitalbazaar/vue3`: Rules for Vue 3 projects and browser only.
 
-
 ## Installation
 
 If you do not have eslint installed:
@@ -25,7 +24,7 @@ npx eslint --init
 ```
 or rename a template from the templates dir
 ```
-cp node_modules/eslint-config-digitalbazaar/templates/node.js ./.eslintrc.cjs
+cp node_modules/eslint-config-digitalbazaar/templates/node.js ./eslint.config.js
 ```
 
 ## Usage
@@ -33,9 +32,9 @@ cp node_modules/eslint-config-digitalbazaar/templates/node.js ./.eslintrc.cjs
 All rules can be accessed via the shorthand `digitalbazaar`
 or using the full module name `eslint-config-digitalbazaar`.
 
-Eslint's documentation on [shareable configs](https://eslint.org/docs/developer-guide/shareable-configs) can be found here.
+ESLint's documentation on [shareable configs](https://eslint.org/docs/developer-guide/shareable-configs) can be found here.
 
-Example .eslintrc.cjs root setup:
+Example `eslint.config.js` root setup:
 ```js
 module.exports = {
   root: true,
@@ -52,7 +51,7 @@ To use the import rules you need to install [`eslint-plugin-import`](https://git
 npm i -D eslint-plugin-import
 ```
 
-Example .eslintrc.cjs import setup:
+Example `eslint.config.js` import setup:
 ```js
 module.exports = {
   extends: ['digitalbazaar/import']
@@ -66,7 +65,7 @@ To use the JSDoc rules you will need to install [`eslint-plugin-jsdoc`](https://
 npm i -D eslint-plugin-jsdoc
 ```
 
-Example .eslintrc.cjs JSDoc setup:
+Example `eslint.config.js` JSDoc setup:
 ```js
 module.exports = {
   // only the JSDoc rules and any rules in parent dirs
@@ -81,7 +80,7 @@ To use ES module code rather than CommonJS, you will need to install [`eslint-pl
 npm i -D eslint-plugin-unicorn
 ```
 
-Example .eslintrc.cjs ESM setup:
+Example `eslint.config.js` ESM setup:
 ```js
 module.exports = {
   // only the module rules and any rules in parent dirs
@@ -96,7 +95,7 @@ To use the Vue 2 rules you will need to install [`eslint-plugin-vue`](https://es
 npm i -D eslint-plugin-vue
 ```
 
-Example .eslintrc.cjs Vue setup:
+Example `eslint.config.js` Vue setup:
 ```js
 module.exports = {
   // only the vue rules and any rules in parent dirs
@@ -114,7 +113,7 @@ To use the Vue 3 rules you will need to install [`eslint-plugin-vue`](https://es
 npm i -D eslint-plugin-vue
 ```
 
-Example .eslintrc.cjs Vue setup:
+Example `eslint.config.js` Vue setup:
 ```js
 module.exports = {
   // only the vue3 rules and any rules in parent dirs
