@@ -1,14 +1,17 @@
-module.exports = {
-  env: {
-    es2020: true
-  },
-  parserOptions: {
-    sourceType: 'module'
-  },
-  plugins: [
-    'unicorn'
-  ],
-  rules: {
-    'unicorn/prefer-module': 'error'
+import eslintPluginUnicorn from 'eslint-plugin-unicorn';
+
+export default [
+  //eslintPluginUnicorn.configs['flat/recommended'],
+  {
+    languageOptions: {
+      ecmaVersion: 2022,
+      sourceType: 'module'
+    },
+    plugins: {
+      unicorn: eslintPluginUnicorn
+    },
+    rules: {
+      'unicorn/prefer-module': 'error'
+    }
   }
-};
+];

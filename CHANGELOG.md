@@ -1,5 +1,37 @@
 # eslint-config-digitalbazaar ChangeLog
 
+### 6.0.0 - 2025-08-xx
+
+### Changed
+- **BREAKING**: Update to `eslint@9`.
+  - Please see the migration notes below.
+  - Comments and suggestions welcome for how best to adapt to the rules that
+    were changed, added, or removed between v8 and v9.
+  - The way configuration is done change significantly. Suggestions welcome on
+    how best to adapt to the new style.
+
+### Migration
+- ESLint v9 is a major breaking change and will require manual updates.
+- ESLint has a migration guide:
+  - https://eslint.org/docs/latest/use/configure/migration-guide
+- A few major notes:
+  - The configuration file changes from multiple `.eslintrc.cjs` or similar to
+    a single top level `eslint.config.js`.
+  - Invocation is now `eslint` without options.
+  - Style rules were deprecated and moved to the stylistic project.
+  - The Digital Bazaar rules are mostly the same as before with updates to
+    `@stylistic/RULENAME` as needed.
+  - Note the common `max-len` is now `@stylistic/max-len`.
+  - Unused rules are now flagged which should help with migration to new rules,
+    or elimination of unused rules.
+  - Quasar has not yet updated support for v9. Until that is updated, stay with
+    v8, or update to v9 and drop Quasar linting and only use Vue linting.
+- Major types of rules are grouped together.
+- The groups can be composed together as needed.
+- There are opinionated configs that compose a number of rules and apply to
+  many common Digital Bazaar repositories.
+- See the [README](./README.md) for notes and usage examples.
+
 ### 5.2.0 - 2024-05-02
 
 ### Changed
