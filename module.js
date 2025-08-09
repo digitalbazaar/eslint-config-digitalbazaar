@@ -4,7 +4,7 @@ export default [
   //eslintPluginUnicorn.configs['flat/recommended'],
   {
     languageOptions: {
-      ecmaVersion: 2022,
+      ecmaVersion: 'latest',
       sourceType: 'module'
     },
     plugins: {

@@ -3,7 +3,7 @@ import eslintPluginImport from 'eslint-plugin-import';
 export default [
   {
     languageOptions: {
-      ecmaVersion: 2020,
+      ecmaVersion: 'latest',
       sourceType: 'module'
     },
     plugins: {
