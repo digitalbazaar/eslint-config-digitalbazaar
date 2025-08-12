@@ -25,7 +25,7 @@ export default [
       }],
       yoda: 'error',
       // deprecated in v8.46.0
-      'no-return-await': 'error',
+      'no-return-await': 'error'
     }
   },
   {
@@ -39,7 +39,7 @@ export default [
       '@stylistic/arrow-spacing': 'error',
       '@stylistic/block-spacing': ['error', 'never'],
       '@stylistic/brace-style': ['error', '1tbs'],
-      '@stylistic/comma-dangle': ['error', 'only-multiline'],
+      '@stylistic/comma-dangle': ['error', 'never'],
       '@stylistic/comma-spacing': 'error',
       '@stylistic/eol-last': 'error',
       '@stylistic/key-spacing': ['error', {
@@ -64,7 +64,7 @@ export default [
       '@stylistic/max-len': ['error', {
         code: 80,
         ignorePattern: '\\* SPDX-License-Identifier: ',
-        ignoreUrls: true,
+        ignoreUrls: true
         //ignoreRegExpLiterals: true
       }],
       '@stylistic/no-extra-semi': 'error',
