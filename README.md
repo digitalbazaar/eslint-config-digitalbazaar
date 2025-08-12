@@ -7,7 +7,7 @@ There are 6 rule sets:
 2. `eslint-config-digitalbazaar/import`: Rules for es6 imports in the browser and node.
 3. `eslint-config-digitalbazaar/jsdoc`: Rules for JSDoc for both node and the browser.
 4. `eslint-config-digitalbazaar/module`: Rules for modules for both node and the browser.
-5. `eslint-config-digitalbazaar/vue`: Rules for Vue 2 projects and browser only.
+5. `eslint-config-digitalbazaar/vue2`: Rules for Vue 2 projects and browser only.
 6. `eslint-config-digitalbazaar/vue3`: Rules for Vue 3 projects and browser only.
 
 ## Installation
@@ -99,7 +99,7 @@ Example `eslint.config.js` Vue setup:
 ```js
 module.exports = {
   // only the vue rules and any rules in parent dirs
-  extends: ['digitalbazaar/vue']
+  extends: ['digitalbazaar/vue2']
 }
 ```
 

@@ -14,6 +14,8 @@
 - **BREAKING**: Change `'@stylistic/comma-dangle'` to `'never'` from
   `'only-multiline'`. Changed to enforce a more uniform style. Override locally
   if it causes issues.
+- **BREAKING**: Rename `vue` config to `vue2`. Various projects have been using
+  `vue` when they should be using `vue3`. This will make usage more explicit.
 
 ### Migration
 - ESLint v9 is a major breaking change and will require manual updates.
