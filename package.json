@@ -8,7 +8,7 @@
     ".": "./index.js",
     "./jsdoc": "./jsdoc.js",
     "./module": "./module.js",
-    "./vue": "./vue.js",
+    "./vue2": "./vue2.js",
     "./vue3": "./vue3.js"
   },
   "files": [
@@ -17,7 +17,7 @@
     "jsdoc.js",
     "module.js",
     "vue-common.js",
-    "vue.js",
+    "vue2.js",
     "vue3.js",
     "templates/**/*.js"
   ],
