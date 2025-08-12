@@ -11,6 +11,9 @@
     how best to adapt to the new style.
 - **BREAKING**: Set `ecmaVersion` to `latest`. Override in project config if a
   specific version limitation is required.
+- **BREAKING**: Change `'@stylistic/comma-dangle'` to `'never'` from
+  `'only-multiline'`. Changed to enforce a more uniform style. Override locally
+  if it causes issues.
 
 ### Migration
 - ESLint v9 is a major breaking change and will require manual updates.

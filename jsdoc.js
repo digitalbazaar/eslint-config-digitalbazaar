@@ -26,7 +26,7 @@ export default [
       'jsdoc/require-returns-check': 0,
       'jsdoc/require-returns-description': 1,
       'jsdoc/require-returns-type': 1,
-      'jsdoc/valid-types': 1,
+      'jsdoc/valid-types': 1
     }
   }
 ];

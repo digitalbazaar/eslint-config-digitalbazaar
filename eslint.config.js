@@ -10,7 +10,7 @@ export default [
       globals: {
         ...globals.node
       }
-    },
+    }
   },
   {
     ...digitalbazaarImport,
