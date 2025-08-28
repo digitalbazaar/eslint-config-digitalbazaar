@@ -1,4 +1,4 @@
-import config from 'eslint-config-digitalbazaar/node-recommended';
+import config from '@digitalbazaar/eslint-config/node-recommended';
 
 export default [
   ...config

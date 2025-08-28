@@ -1,5 +1,5 @@
 {
-  "name": "eslint-config-digitalbazaar",
+  "name": "@digitalbazaar/eslint-config",
   "version": "5.2.1-0",
   "description": "Digital Bazaar's eslint rules",
   "type": "module",

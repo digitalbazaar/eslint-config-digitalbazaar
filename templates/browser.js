@@ -1,4 +1,4 @@
-import config from 'eslint-config-digitalbazaar/browser-recommended';
+import config from '@digitalbazaar/eslint-config/browser-recommended';
 
 export default [
   ...config

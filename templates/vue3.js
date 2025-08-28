@@ -1,4 +1,4 @@
-import config from 'eslint-config-digitalbazaar/vue3-recommended';
+import config from '@digitalbazaar/eslint-config/vue3-recommended';
 
 export default [
   ...config
