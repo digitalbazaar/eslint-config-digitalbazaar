@@ -9,7 +9,7 @@
   - Please see the migration notes below.
   - Comments and suggestions welcome for how best to adapt to the rules that
     were changed, added, or removed between v8 and v9.
-  - The way configuration is done change significantly. Suggestions welcome on
+  - The way configuration is done changed significantly. Suggestions welcome on
     how best to adapt to the new style.
 - **BREAKING**: Set `ecmaVersion` to `latest`. Override in project config if a
   specific version limitation is required.
