@@ -126,7 +126,7 @@ npm i -D eslint-plugin-vue
 
 Example `eslint.config.js` Vue setup:
 ```js
-import config from 'eslint-config-myconfig'
+import config from '@digitalbazaar/eslint-config'
 import vue3Config from '@digitalbazaar/eslint-config/vue3'
 
 export default [
@@ -148,7 +148,7 @@ import vue3Config from '@digitalbazaar/eslint-config/vue3'
 
 export default [
   ...config,
-  ...jsdoconfig
+  ...jsdoconfig,
   ...vue3Config
 ];
 ```
