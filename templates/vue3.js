@@ -1,15 +1,5 @@
-import digitalbazaar from 'eslint-config-digitalbazaar';
-import digitalbazaarVue3 from 'eslint-config-digitalbazaar/vue3';
-import globals from 'globals';
+import config from 'eslint-config-digitalbazaar/vue3-recommended';
 
 export default [
-  {
-    languageOptions: {
-      globals: {
-        ...globals.browser
-      }
-    }
-  },
-  ...digitalbazaar,
-  ...digitalbazaarVue3
+  ...config
 ];

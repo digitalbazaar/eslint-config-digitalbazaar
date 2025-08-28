@@ -1,19 +1,10 @@
-import digitalbazaar from './index.js';
-import digitalbazaarImport from './import.js';
-import globals from 'globals';
+import importConfig from './configs/import.js';
+import nodeConfig from './configs/node-recommended.js';
 
 export default [
-  ...digitalbazaar,
+  ...nodeConfig,
   {
-    files: ['**/*.js'],
-    languageOptions: {
-      globals: {
-        ...globals.node
-      }
-    }
-  },
-  {
-    ...digitalbazaarImport,
-    files: ['test/import/*.js']
+    files: ['test/import/*.js'],
+    ...importConfig
   }
 ];
