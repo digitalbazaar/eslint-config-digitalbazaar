@@ -56,6 +56,10 @@ npm i -D eslint-plugin-unicorn
 Dependencies for vue checks:
 ```
 npm i -D eslint-plugin-vue
+```
+
+Dependencies for vue checks when using `legacy-peer-deps=true`:
+```
 npm i -D vue-eslint-parser
 ```
 
