@@ -3,23 +3,24 @@
   "version": "5.2.1-0",
   "description": "Digital Bazaar's eslint rules",
   "type": "module",
-  "main": "./index.js",
+  "main": "./configs/base.js",
   "exports": {
-    ".": "./index.js",
-    "./jsdoc": "./jsdoc.js",
-    "./module": "./module.js",
-    "./vue2": "./vue2.js",
-    "./vue3": "./vue3.js"
+    ".": "./configs/base.js",
+    "./browser-recommended": "./configs/browser-recommended.js",
+    "./import": "./configs/import.js",
+    "./jsdoc": "./configs/jsdoc.js",
+    "./module": "./configs/module.js",
+    "./node-recommended": "./configs/node-recommended.js",
+    "./recommended": "./configs/recommended.js",
+    "./universal-recommended": "./configs/universal-recommended.js",
+    "./vue2": "./configs/vue2.js",
+    "./vue2-recommended": "./configs/vue2-recommended.js",
+    "./vue3": "./configs/vue3.js",
+    "./vue3-recommended": "./configs/vue3-recommended.js"
   },
   "files": [
-    "import.js",
-    "index.js",
-    "jsdoc.js",
-    "module.js",
-    "vue-common.js",
-    "vue2.js",
-    "vue3.js",
-    "templates/**/*.js"
+    "./configs/**/*.js",
+    "./templates/**/*.js"
   ],
   "scripts": {
     "test": "eslint",
@@ -31,7 +32,7 @@
   },
   "keywords": [
     "eslint",
-    "config"
+    "eslintconfig"
   ],
   "author": {
     "name": "Digital Bazaar, Inc.",
@@ -43,24 +44,28 @@
     "url": "https://github.com/digitalbazaar/eslint-config-digitalbazaar/issues"
   },
   "homepage": "https://github.com/digitalbazaar/eslint-config-digitalbazaar#readme",
+  "dependencies": {
+    "@eslint/js": "^9.34.0",
+    "@stylistic/eslint-plugin": "^5.2.3",
+    "globals": "^16.3.0"
+  },
   "devDependencies": {
-    "@stylistic/eslint-plugin-migrate": "^4.4.1",
-    "eslint": "^9.32.0",
+    "eslint": "^9.34.0",
     "eslint-plugin-eslint-plugin": "^7.0.0",
-    "eslint-plugin-import": "^2.32.0"
+    "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-unicorn": "^60.0.0"
   },
   "peerDependencies": {
-    "eslint": "^9.32.0",
-    "eslint-plugin-jsdoc": "^52.0.4"
+    "eslint": "^9.34.0",
+    "eslint-plugin-jsdoc": "^54.1.1",
+    "eslint-plugin-unicorn": "^60.0.0"
   },
   "peerDependenciesMeta": {
     "eslint-plugin-jsdoc": {
       "optional": true
+    },
+    "eslint-plugin-unicorn": {
+      "optional": true
     }
-  },
-  "dependencies": {
-    "@eslint/js": "^9.33.0",
-    "@stylistic/eslint-plugin": "^5.2.3",
-    "globals": "^16.3.0"
   }
 }
