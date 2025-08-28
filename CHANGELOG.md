@@ -14,8 +14,7 @@
 - **BREAKING**: Change `'@stylistic/comma-dangle'` to `'never'` from
   `'only-multiline'`. Changed to enforce a more uniform style. Override locally
   if it causes issues.
-- **BREAKING**: Rename `vue` config to `vue2`. Various projects have been using
-  `vue` when they should be using `vue3`. This will make usage more explicit.
+- **BREAKING**: Remove `vue` rules for Vue 2. Keep `vue3` as a versioned name.
 
 ### Migration
 - ESLint v9 is a major breaking change and will require manual updates.
@@ -25,7 +24,7 @@
   - The configuration file changes from multiple `.eslintrc.cjs` or similar to
     a single top level `eslint.config.js`.
   - Invocation is now `eslint` without options.
-  - Style rules were deprecated and moved to the stylistic project.
+  - Style rules were deprecated and moved to the `stylistic` project.
   - The Digital Bazaar rules are mostly the same as before with updates to
     `@stylistic/RULENAME` as needed.
   - Note the common `max-len` is now `@stylistic/max-len`.
@@ -35,8 +34,8 @@
     v8, or update to v9 and drop Quasar linting and only use Vue linting.
 - Major types of rules are grouped together.
 - The groups can be composed together as needed.
-- There are opinionated configs that compose a number of rules and apply to
-  many common Digital Bazaar repositories.
+- There are opinionated "recommended" configs that compose a number of rules
+  and apply to many common Digital Bazaar repositories.
 - See the [README](./README.md) for notes and usage examples.
 
 ### 5.2.0 - 2024-05-02

@@ -7,7 +7,6 @@ There are various core rule sets:
 - `eslint-config-digitalbazaar/import`: Rules for es6 imports in the browser and node code.
 - `eslint-config-digitalbazaar/jsdoc`: Rules for JSDoc for both node and browser code.
 - `eslint-config-digitalbazaar/module`: Rules for modules for both node and browser code.
-- `eslint-config-digitalbazaar/vue2`: Rules for Vue 2 code.
 - `eslint-config-digitalbazaar/vue3`: Rules for Vue 3 code.
 
 For common use cases, there are recommended configs, that load the core rules:
@@ -15,7 +14,6 @@ For common use cases, there are recommended configs, that load the core rules:
 - `eslint-config-digitalbazaar/node-recommended`: Recommended rules for projects targeting node.
 - `eslint-config-digitalbazaar/recommended`: Common recommended rules.
 - `eslint-config-digitalbazaar/universal-recommended`: Recommended rules for projects targeting node and web browsers.
-- `eslint-config-digitalbazaar/vue2-recommended`: Recommended rules for projects targeting Vue 2.
 - `eslint-config-digitalbazaar/vue3-recommended`: Recommended rules for projects targeting Vue 3.
 
 ## Installation
@@ -118,27 +116,6 @@ export default [
   ...moduleConfig
 ];
 ```
-
-### Vue 2
-
-To use the Vue 2 rules you will need to install [`eslint-plugin-vue`](https://eslint.vuejs.org/):
-```
-npm i -D eslint-plugin-vue
-```
-
-Example `eslint.config.js` Vue setup:
-```js
-import config from 'eslint-config-digitalbazaar'
-import vue2Config from 'eslint-config-digitalbazaar/vue2'
-
-export default [
-  ...config,
-  ...vue2Config
-];
-```
-
-For command line use you may need to [explicitly enable linting `.vue`
-files](https://eslint.vuejs.org/user-guide/#running-eslint-from-the-command-line).
 
 ### Vue 3
 
