@@ -36,6 +36,31 @@ or rename a template from the templates dir
 cp node_modules/@digitalbazaar/eslint-config/templates/node-recommended.js ./eslint.config.js
 ```
 
+### Dependencies
+
+**NOTE**: Currently the core and recommended configs may use dependencies that
+need to be installed in a project **manually**. This is to avoid requiring
+dependencies in this package. A future version may provide alternative packages
+with appropriate dependencies.
+
+Dependencies for jsdoc checks:
+```
+npm i -D eslint-plugin-jsdoc
+```
+
+Dependencies for module and node checks:
+```
+npm i -D eslint-plugin-unicorn
+```
+
+Dependencies for vue checks:
+```
+npm i -D eslint-plugin-vue
+npm i -D vue-eslint-parser
+```
+
+Most recommended configs use the jsdoc and module checks and dependencies.
+
 ## Usage
 
 Config files can use the simple array syntax or the `defineConfig` syntax
