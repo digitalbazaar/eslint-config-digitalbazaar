@@ -1,6 +1,6 @@
 # @digitalbazaar/eslint-config ChangeLog
 
-### 6.0.0 - 2025-08-xx
+### 6.0.0 - 2025-09-02
 
 ### Changed
 - **BREAKING**: Rename NPM package from `eslint-config-digitalbazaar` to
