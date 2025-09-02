@@ -219,4 +219,4 @@ Digital Bazaar: support@digitalbazaar.com
 
 ## License
 
-[New BSD License (3-clause)](LICENSE) (c) Digital Bazaar, Inc.
+[BSD-3-Clause](LICENSE) Copyright 2025 Digital Bazaar, Inc.
