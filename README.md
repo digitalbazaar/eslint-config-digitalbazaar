@@ -22,17 +22,17 @@ Requires:
 - eslint v9
 
 If you do not have eslint installed:
-```
+```sh
 npm i -D eslint
 npm i -D @digitalbazaar/eslint-config
 ```
 
 To start an eslint config file:
-```
+```sh
 npx eslint --init
 ```
 or rename a template from the templates dir
-```
+```sh
 cp node_modules/@digitalbazaar/eslint-config/templates/node-recommended.js ./eslint.config.js
 ```
 
@@ -44,22 +44,22 @@ dependencies in this package. A future version may provide alternative packages
 with appropriate dependencies.
 
 Dependencies for jsdoc checks:
-```
+```sh
 npm i -D eslint-plugin-jsdoc
 ```
 
 Dependencies for module and node checks:
-```
+```sh
 npm i -D eslint-plugin-unicorn
 ```
 
 Dependencies for vue checks:
-```
+```sh
 npm i -D eslint-plugin-vue
 ```
 
 Dependencies for vue checks when using `legacy-peer-deps=true`:
-```
+```sh
 npm i -D vue-eslint-parser
 ```
 
@@ -90,7 +90,7 @@ dependencies must be manually installed when using recommended configs.
 To use the `import` plugin rules you need to install
 [`eslint-plugin-import`](https://github.com/import-js/eslint-plugin-import):
 
-```
+```sh
 npm i -D eslint-plugin-import
 ```
 
@@ -111,7 +111,7 @@ When using the recommended configs, or to use the JSDoc rules standalone, you
 need to install
 [`eslint-plugin-jsdoc`](https://github.com/gajus/eslint-plugin-jsdoc):
 
-```
+```sh
 npm i -D eslint-plugin-jsdoc
 ```
 
@@ -131,7 +131,7 @@ export default [
 When using the recommended configs, or to use the ES module rules standalone,
 you need to install
 [`eslint-plugin-unicorn`](https://github.com/sindresorhus/eslint-plugin-unicorn):
-```
+```sh
 npm i -D eslint-plugin-unicorn
 ```
 
@@ -149,7 +149,7 @@ export default [
 ### Vue 3
 
 To use the Vue 3 rules you will need to install [`eslint-plugin-vue`](https://eslint.vuejs.org/):
-```
+```sh
 npm i -D eslint-plugin-vue
 ```
 
@@ -194,7 +194,7 @@ Other rules that are not included above but can be useful:
 See [`unicorn/prefer-node-protocol`](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-node-protocol.md).
 
 Requires:
-```
+```sh
 npm i -D eslint-plugin-unicorn
 ```
 
