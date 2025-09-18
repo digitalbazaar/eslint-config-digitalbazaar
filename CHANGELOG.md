@@ -1,5 +1,16 @@
 # @digitalbazaar/eslint-config ChangeLog
 
+### 6.1.0 - 2025-09-xx
+
+### Changed
+- Update dependencies and peerDependencies.
+  - `@eslint/js@^9.35.0`
+  - `@stylistic/eslint-plugin@^5.3.1`
+  - `eslint-plugin-jsdoc@^59.0.1`
+  - `eslint-plugin-unicorn@^61.0.2`
+  - `eslint@^9.35.0`
+  - `globals@^16.4.0`
+
 ### 6.0.0 - 2025-09-02
 
 ### Changed
