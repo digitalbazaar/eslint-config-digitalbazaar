@@ -1,6 +1,6 @@
 # @digitalbazaar/eslint-config ChangeLog
 
-### 6.2.0 - 2025-09-xx
+### 6.2.0 - 2025-09-22
 
 ### Changed
 - Update dependencies and peerDependencies.
