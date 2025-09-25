@@ -1,5 +1,10 @@
 # @digitalbazaar/eslint-config ChangeLog
 
+### 7.0.0 - 2025-09-xx
+
+### Changed
+- Rename template config files to `*-recommended.js`.
+
 ### 6.2.0 - 2025-09-22
 
 ### Changed
