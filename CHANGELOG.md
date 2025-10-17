@@ -19,7 +19,7 @@
     - `eslint-plugin-unicorn`
     - `eslint-plugin-vue`
     - `vue-eslint-parser` (peer dependency of vue plugin)
-- Rename template config files to `*-recommended.js`.
+- Rename `template/*.js` config files to `examples/*-recommended.js`.
 - Update dependencies and peerDependencies.
   - `@eslint/js@^9.38.0`
   - `eslint-plugin-jsdoc@^61.1.4`

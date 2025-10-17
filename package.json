@@ -18,7 +18,7 @@
   },
   "files": [
     "./configs/**/*.js",
-    "./templates/**/*.js"
+    "./examples/**/*.js"
   ],
   "scripts": {
     "test": "eslint",
