@@ -38,7 +38,7 @@ To start an eslint config file:
 ```sh
 npx eslint --init
 ```
-Or rename a template from the `examples/` directory:
+Or copy a template from the `examples/` directory:
 ```sh
 cp node_modules/@digitalbazaar/eslint-config/examples/node-recommended.js ./eslint.config.js
 ```
