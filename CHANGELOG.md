@@ -9,12 +9,12 @@
     Direct dependencies will simplify usage. More eslint related packages may
     be installed than needed depending on the configs used.
   - **NOTE**: This update will always install jsdoc, vue, and other related
-    dependencies. A future update may split this package, or use other
-    techniques, to reduce dependencies in common use cases.
+    dependency eslint plugins. A future update may split this package, or use
+    other techniques, to reduce dependencies in common use cases.
   - **NOTE**: This setup does not cover configs that use plugins not used in
     the recommended configs. Use of the `import` config still requires manually
     adding and managing an `eslint-plugin-import` dependency.
-  - Added dependencies:
+  - **MIGRATION**: Packages can remove direct dependencies:
     - `eslint-plugin-jsdoc`
     - `eslint-plugin-unicorn`
     - `eslint-plugin-vue`
