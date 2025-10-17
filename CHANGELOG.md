@@ -1,9 +1,29 @@
 # @digitalbazaar/eslint-config ChangeLog
 
-### 7.0.0 - 2025-09-xx
+### 7.0.0 - 2025-10-xx
 
 ### Changed
+- **BREAKING**: Use direct dependencies and remove peer dependencies for
+  packages required by recommended configs.
+  - Setup and upgrades of dependant packages was problematic in some cases.
+    Direct dependencies will simplify usage. More eslint related packages may
+    be installed than needed depending on the configs used.
+  - **NOTE**: This update will always install jsdoc, vue, and other related
+    dependencies. A future update may split this package, or use other
+    techniques, to reduce dependencies in common use cases.
+  - **NOTE**: This setup does not cover configs that use plugins not used in
+    the recommended configs. Use of the `import` config still requires manually
+    adding and managing an `eslint-plugin-import` dependency.
+  - Added dependencies:
+    - `eslint-plugin-jsdoc`
+    - `eslint-plugin-unicorn`
+    - `eslint-plugin-vue`
+    - `vue-eslint-parser` (peer dependency of vue plugin)
 - Rename template config files to `*-recommended.js`.
+- Update dependencies and peerDependencies.
+  - `@eslint/js@^9.38.0`
+  - `eslint-plugin-jsdoc@^61.1.4`
+  - `eslint@^9.38.0`
 
 ### 6.2.0 - 2025-09-22
 
