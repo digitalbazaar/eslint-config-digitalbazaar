@@ -1,29 +1,36 @@
 # Digital Bazaar ESLint Configs _(@digitalbazaar/eslint-config)_
 
-This package provides eslint rules used by Digital Bazaar as a set of extendable shared configs.
+This package provides eslint rules used by Digital Bazaar as a set of
+extendable shared configs.
 
 There are various core rule sets:
 - `@digitalbazaar/eslint-config`: Base rules for both node and browser code.
-- `@digitalbazaar/eslint-config/import`: Rules for es6 imports in the browser and node code.
-- `@digitalbazaar/eslint-config/jsdoc`: Rules for JSDoc for both node and browser code.
-- `@digitalbazaar/eslint-config/module`: Rules for modules for both node and browser code.
+- `@digitalbazaar/eslint-config/import`: Rules for es6 imports in the browser
+  and node code.
+- `@digitalbazaar/eslint-config/jsdoc`: Rules for JSDoc for both node and
+  browser code.
+- `@digitalbazaar/eslint-config/module`: Rules for modules for both node and
+  browser code.
 - `@digitalbazaar/eslint-config/vue3`: Rules for Vue 3 code.
 
 For common use cases, there are recommended configs, that load the core rules:
-- `@digitalbazaar/eslint-config/browser-recommended`: Recommended rules for projects targeting web browsers.
-- `@digitalbazaar/eslint-config/node-recommended`: Recommended rules for projects targeting node.
+- `@digitalbazaar/eslint-config/browser-recommended`: Recommended rules for
+  projects targeting web browsers.
+- `@digitalbazaar/eslint-config/node-recommended`: Recommended rules for
+  projects targeting node.
 - `@digitalbazaar/eslint-config/recommended`: Common recommended rules.
-- `@digitalbazaar/eslint-config/universal-recommended`: Recommended rules for projects targeting node and web browsers.
-- `@digitalbazaar/eslint-config/vue3-recommended`: Recommended rules for projects targeting Vue 3.
+- `@digitalbazaar/eslint-config/universal-recommended`: Recommended rules for
+  projects targeting node and web browsers.
+- `@digitalbazaar/eslint-config/vue3-recommended`: Recommended rules for
+  projects targeting Vue 3.
 
 ## Installation
 
 Requires:
 - eslint v9
 
-If you do not have eslint installed:
 ```sh
-npm i -D eslint
+npm i -D eslint@9
 npm i -D @digitalbazaar/eslint-config
 ```
 
@@ -38,32 +45,17 @@ cp node_modules/@digitalbazaar/eslint-config/templates/node-recommended.js ./esl
 
 ### Dependencies
 
-**NOTE**: Currently the core and recommended configs may use dependencies that
-need to be installed in a project **manually**. This is to avoid requiring
-dependencies in this package. A future version may provide alternative packages
-with appropriate dependencies.
+**NOTE**: The core and recommended configs use dependencies that are
+automatically installed. Depending on the configs you use, there may be extra
+plugin dependencies installed that are not needed. This adds some development
+bloat but simplifies usage and dependency management. A future version may
+provide alternative slimmer packages with appropriate dependencies.
 
-Dependencies for jsdoc checks:
-```sh
-npm i -D eslint-plugin-jsdoc
-```
-
-Dependencies for module and node checks:
-```sh
-npm i -D eslint-plugin-unicorn
-```
-
-Dependencies for vue checks:
-```sh
-npm i -D eslint-plugin-vue
-```
-
-Dependencies for vue checks when using `legacy-peer-deps=true`:
-```sh
-npm i -D vue-eslint-parser
-```
-
-Most recommended configs use the jsdoc and module checks and dependencies.
+Notable dependencies that are always installed:
+- [`eslint-plugin-jsdoc`](https://github.com/gajus/eslint-plugin-jsdoc)
+- [`eslint-plugin-unicorn`](https://github.com/sindresorhus/eslint-plugin-unicorn)
+- [`eslint-plugin-vue`](https://eslint.vuejs.org/):
+- `vue-eslint-parser` (peer dependency of vue plugin)
 
 ## Usage
 
@@ -79,7 +71,7 @@ export default [
 ];
 ```
 
-Recommended configs (listed above) exist for common use cases. They may be
+Recommended configs (listed earlier) exist for common use cases. They may be
 sufficient on their own when using the opinionated code and file style used by
 Digital Bazaar for specific types of pacakges. However, they can also be mixed
 and matched and modified as needed. Note that currently required plugin
@@ -107,15 +99,7 @@ export default [
 
 ### JSDoc
 
-When using the recommended configs, or to use the JSDoc rules standalone, you
-need to install
-[`eslint-plugin-jsdoc`](https://github.com/gajus/eslint-plugin-jsdoc):
-
-```sh
-npm i -D eslint-plugin-jsdoc
-```
-
-Example `eslint.config.js` JSDoc setup:
+Example `eslint.config.js` to explicitly use the JSDoc rules:
 ```js
 import config from '@digitalbazaar/eslint-config'
 import jsdocConfig from '@digitalbazaar/eslint-config/jsdoc'
@@ -128,14 +112,7 @@ export default [
 
 ### Modules
 
-When using the recommended configs, or to use the ES module rules standalone,
-you need to install
-[`eslint-plugin-unicorn`](https://github.com/sindresorhus/eslint-plugin-unicorn):
-```sh
-npm i -D eslint-plugin-unicorn
-```
-
-Example `eslint.config.js` ESM setup:
+Example `eslint.config.js` to explicitly use ES module rules:
 ```js
 import config from '@digitalbazaar/eslint-config'
 import moduleConfig from '@digitalbazaar/eslint-config/module'
@@ -148,12 +125,7 @@ export default [
 
 ### Vue 3
 
-To use the Vue 3 rules you will need to install [`eslint-plugin-vue`](https://eslint.vuejs.org/):
-```sh
-npm i -D eslint-plugin-vue
-```
-
-Example `eslint.config.js` Vue setup:
+Example `eslint.config.js` to explicitly use Vue 3 rules:
 ```js
 import config from '@digitalbazaar/eslint-config'
 import vue3Config from '@digitalbazaar/eslint-config/vue3'
@@ -184,7 +156,7 @@ export default [
 
 ## Other Rules
 
-Other rules that are not included above but can be useful:
+Other rules that can be useful:
 
 ### `unicorn/prefer-node-protocol`
 
@@ -193,12 +165,7 @@ Other rules that are not included above but can be useful:
 
 See [`unicorn/prefer-node-protocol`](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-node-protocol.md).
 
-Requires:
-```sh
-npm i -D eslint-plugin-unicorn
-```
-
-Rules:
+Example `eslint.config.js`:
 ```js
 import config from '@digitalbazaar/eslint-config'
 
