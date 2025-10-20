@@ -73,7 +73,7 @@ export default [
 
 Recommended configs (listed earlier) exist for common use cases. They may be
 sufficient on their own when using the opinionated code and file style used by
-Digital Bazaar for specific types of pacakges. However, they can also be mixed
+Digital Bazaar for specific types of packages. However, they can also be mixed
 and matched and modified as needed. Note that currently required plugin
 dependencies must be manually installed when using recommended configs.
 
