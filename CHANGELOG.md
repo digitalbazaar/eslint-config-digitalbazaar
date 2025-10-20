@@ -1,6 +1,6 @@
 # @digitalbazaar/eslint-config ChangeLog
 
-### 7.0.0 - 2025-10-xx
+### 7.0.0 - 2025-10-20
 
 ### Changed
 - **BREAKING**: Use direct dependencies and remove peer dependencies for
