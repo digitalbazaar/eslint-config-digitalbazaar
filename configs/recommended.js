@@ -13,7 +13,8 @@ export default [
     ignores: [
       'coverage/',
       'dist/',
-      'node_modules/'
+      'node_modules/',
+      '.cache/'
     ]
   },
   {
