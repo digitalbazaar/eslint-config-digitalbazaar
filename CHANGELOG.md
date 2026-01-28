@@ -1,5 +1,10 @@
 # @digitalbazaar/eslint-config ChangeLog
 
+### 7.0.1 - 2026-01-xx
+
+### Changed
+- Add `.cache/` to the recommended `ignores` list.
+
 ### 7.0.0 - 2025-10-20
 
 ### Changed
