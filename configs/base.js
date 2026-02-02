@@ -1,6 +1,9 @@
 import js from '@eslint/js';
 import stylistic from '@stylistic/eslint-plugin';
 
+// custom digitalbazaar rules
+import catchSpacing from '../rules/catch-spacing.js';
+
 export default [
   js.configs.recommended,
   {
@@ -89,6 +92,30 @@ export default [
       }],
       '@stylistic/space-infix-ops': 'error',
       '@stylistic/space-in-parens': ['error', 'never']
+    }
+  },
+  {
+    // special handling of catch spacing
+    plugins: {
+      '@digitalbazaar': {
+        rules: {
+          'catch-spacing': catchSpacing
+        }
+      }
+    },
+    rules: {
+      // FIXME: add more tests to check know if any of this is needed
+      //'@stylistic/keyword-spacing': [
+      //  'error',
+      //  {
+      //    before: true,
+      //    after: true,
+      //    overrides: {
+      //      //catch: {after: null}
+      //    }
+      //  }
+      //],
+      '@digitalbazaar/catch-spacing': 'error'
     }
   }
 ];
