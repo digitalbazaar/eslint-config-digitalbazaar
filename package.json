@@ -21,7 +21,7 @@
     "./examples/**/*.js"
   ],
   "scripts": {
-    "test": "eslint",
+    "test": "vitest",
     "lint": "eslint --ignore-pattern 'test/**/*.js'"
   },
   "repository": {
@@ -54,7 +54,8 @@
   "devDependencies": {
     "eslint": "^9.38.0",
     "eslint-plugin-eslint-plugin": "^7.0.0",
-    "eslint-plugin-import": "^2.32.0"
+    "eslint-plugin-import": "^2.32.0",
+    "vitest": "^4.0.18"
   },
   "peerDependencies": {
     "eslint": "^9.38.0"
