@@ -50,7 +50,8 @@ export default [
         afterColon: true
       }],
       '@stylistic/keyword-spacing': ['error', {overrides: {
-        catch: {after: false},
+        // see @digitalbazaar/catch-spacing below
+        //catch: {after: false},
         for: {after: false},
         if: {after: false},
         switch: {after: false},
@@ -104,17 +105,6 @@ export default [
       }
     },
     rules: {
-      // FIXME: add more tests to check know if any of this is needed
-      //'@stylistic/keyword-spacing': [
-      //  'error',
-      //  {
-      //    before: true,
-      //    after: true,
-      //    overrides: {
-      //      //catch: {after: null}
-      //    }
-      //  }
-      //],
       '@digitalbazaar/catch-spacing': 'error'
     }
   }
