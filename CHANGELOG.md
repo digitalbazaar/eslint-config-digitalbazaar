@@ -1,6 +1,6 @@
 # @digitalbazaar/eslint-config ChangeLog
 
-### 8.0.0 - 2026-xx-xx
+### 8.0.0 - 2026-02-06
 
 ### Added
 - New rule `catch-spacing` to handle special case of the `} catch {` construct
