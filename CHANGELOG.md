@@ -8,18 +8,12 @@
   formatting or eslint pragmas.
 
 ### Changed
-- **BREAKING**: Add rule to base config.
+- **BREAKING**: Add `catch-spacing` rule to base config.
 - **BREAKING**: Update dependencies.
   - `eslint-plugin-jsdoc@62`
   - `eslint-plugin-unicorn@62`
   - `globals@17`
-- Update dependencies.
-  - `@eslint/js@9.39.2`
-  - `@stylistic/eslint-plugin@5.7.1`
-  - `eslint-plugin-vue@10.7.0`
-  - `eslint@9.39.2`
-  - `eslint-plugin-eslint-plugin@7.3.0`
-  - `eslint@9.39.2`
+- Update minor dependencies.
 
 ### 7.0.1 - 2026-01-28
 
