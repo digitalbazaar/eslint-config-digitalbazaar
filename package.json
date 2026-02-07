@@ -1,6 +1,6 @@
 {
   "name": "@digitalbazaar/eslint-config",
-  "version": "8.0.0",
+  "version": "8.0.1-0",
   "description": "Digital Bazaar's eslint rules",
   "type": "module",
   "main": "./configs/base.js",
