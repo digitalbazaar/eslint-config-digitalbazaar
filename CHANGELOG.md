@@ -1,5 +1,10 @@
 # @digitalbazaar/eslint-config ChangeLog
 
+### 8.0.1 - 2026-02-xx
+
+### Fixed
+- Package `catch-spacing` rule.
+
 ### 8.0.0 - 2026-02-06
 
 ### Added
