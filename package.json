@@ -18,7 +18,8 @@
   },
   "files": [
     "./configs/**/*.js",
-    "./examples/**/*.js"
+    "./examples/**/*.js",
+    "./rules/**/*.js"
   ],
   "scripts": {
     "test": "vitest",
