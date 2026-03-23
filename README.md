@@ -64,7 +64,7 @@ Config files can use the simple array syntax or the `defineConfig` syntax
 
 Example `eslint.config.js` root setup:
 ```js
-import config from '@digitalbazaar/eslint-config/recommended'
+import config from '@digitalbazaar/eslint-config/recommended';
 
 export default [
   ...config
@@ -88,8 +88,8 @@ npm i -D eslint-plugin-import
 
 Example `eslint.config.js` import setup:
 ```js
-import config from '@digitalbazaar/eslint-config/recommended'
-import importConfig from '@digitalbazaar/eslint-config/import'
+import config from '@digitalbazaar/eslint-config/recommended';
+import importConfig from '@digitalbazaar/eslint-config/import';
 
 export default [
   ...config,
@@ -101,8 +101,8 @@ export default [
 
 Example `eslint.config.js` to explicitly use the JSDoc rules:
 ```js
-import config from '@digitalbazaar/eslint-config'
-import jsdocConfig from '@digitalbazaar/eslint-config/jsdoc'
+import config from '@digitalbazaar/eslint-config';
+import jsdocConfig from '@digitalbazaar/eslint-config/jsdoc';
 
 export default [
   ...config,
@@ -114,8 +114,8 @@ export default [
 
 Example `eslint.config.js` to explicitly use ES module rules:
 ```js
-import config from '@digitalbazaar/eslint-config'
-import moduleConfig from '@digitalbazaar/eslint-config/module'
+import config from '@digitalbazaar/eslint-config';
+import moduleConfig from '@digitalbazaar/eslint-config/module';
 
 export default [
   ...config,
@@ -127,8 +127,8 @@ export default [
 
 Example `eslint.config.js` to explicitly use Vue 3 rules:
 ```js
-import config from '@digitalbazaar/eslint-config'
-import vue3Config from '@digitalbazaar/eslint-config/vue3'
+import config from '@digitalbazaar/eslint-config';
+import vue3Config from '@digitalbazaar/eslint-config/vue3';
 
 export default [
   ...config,
@@ -143,9 +143,9 @@ files](https://eslint.vuejs.org/user-guide/#running-eslint-from-the-command-line
 
 The core rules do not depend on each other and are composable:
 ```js
-import config from '@digitalbazaar/eslint-config'
-import jsdocConfig from '@digitalbazaar/eslint-config/jsdoc'
-import vue3Config from '@digitalbazaar/eslint-config/vue3'
+import config from '@digitalbazaar/eslint-config';
+import jsdocConfig from '@digitalbazaar/eslint-config/jsdoc';
+import vue3Config from '@digitalbazaar/eslint-config/vue3';
 
 export default [
   ...config,
@@ -167,7 +167,7 @@ See [`unicorn/prefer-node-protocol`](https://github.com/sindresorhus/eslint-plug
 
 Example `eslint.config.js`:
 ```js
-import config from '@digitalbazaar/eslint-config'
+import config from '@digitalbazaar/eslint-config';
 
 export default [
   ...config,
