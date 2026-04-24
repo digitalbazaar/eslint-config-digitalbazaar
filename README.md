@@ -18,7 +18,6 @@ For common use cases, there are recommended configs, that load the core rules:
   projects targeting web browsers.
 - `@digitalbazaar/eslint-config/node-recommended`: Recommended rules for
   projects targeting node.
-- `@digitalbazaar/eslint-config/recommended`: Common recommended rules.
 - `@digitalbazaar/eslint-config/universal-recommended`: Recommended rules for
   projects targeting node and web browsers.
 - `@digitalbazaar/eslint-config/vue3-recommended`: Recommended rules for
