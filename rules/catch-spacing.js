@@ -10,7 +10,7 @@ export default {
   },
 
   create(context) {
-    const sourceCode = context.getSourceCode();
+    const {sourceCode} = context;
 
     return {
       CatchClause(node) {
@@ -23,7 +23,7 @@ export default {
 
         // case: catch(e)
         if(node.param && nextToken.value === '(') {
-          if(sourceCode.isSpaceBetweenTokens(catchToken, nextToken)) {
+          if(sourceCode.isSpaceBetween(catchToken, nextToken)) {
             context.report({
               node,
               messageId: 'unexpectedSpace',
@@ -40,7 +40,7 @@ export default {
 
         // case: catch {}
         if(!node.param && nextToken.value === '{') {
-          if(!sourceCode.isSpaceBetweenTokens(catchToken, nextToken)) {
+          if(!sourceCode.isSpaceBetween(catchToken, nextToken)) {
             context.report({
               node,
               messageId: 'missingSpace',

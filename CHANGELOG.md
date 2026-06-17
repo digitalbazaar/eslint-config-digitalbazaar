@@ -1,5 +1,22 @@
 # @digitalbazaar/eslint-config ChangeLog
 
+### 9.0.0 - 2026-xx-xx
+
+### Changed
+- **BREAKING**: Update dependencies:
+  - `eslint@10`
+  - `@eslint/js@10`
+  - `eslint-plugin-jsdoc@63`
+  - `eslint-plugin-unicorn@67`
+- Update minor and dev dependencies.
+
+### Removed
+- **BREAKING**: `eslint-plugin-import` support and testing temporarily
+  disabled.
+  - Disabled due to lack of support for eslint 10. Will be re-enabled when
+    possible.
+  - Workaround is to continue using v8 of this config package.
+
 ### 8.0.1 - 2026-02-09
 
 ### Fixed
