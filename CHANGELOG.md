@@ -1,5 +1,13 @@
 # @digitalbazaar/eslint-config ChangeLog
 
+### 10.0.0 - 2026-11-xx
+
+### Changed
+- **BREAKING**: Update dependencies:
+  - `eslint-plugin-jsdoc@65`
+  - `eslint-plugin-unicorn@79`
+- Update minor and dev dependencies.
+
 ### 9.0.0 - 2026-06-17
 
 ### Changed
