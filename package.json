@@ -46,18 +46,18 @@
   "dependencies": {
     "@eslint/js": "^10.0.1",
     "@stylistic/eslint-plugin": "^5.10.0",
-    "eslint-plugin-jsdoc": "^63.0.5",
-    "eslint-plugin-unicorn": "^67.0.0",
-    "eslint-plugin-vue": "^10.9.2",
-    "globals": "^17.6.0",
+    "eslint-plugin-jsdoc": "^65.4.3",
+    "eslint-plugin-unicorn": "^79.0.0",
+    "eslint-plugin-vue": "^10.12.0",
+    "globals": "^17.14.0",
     "vue-eslint-parser": "^10.4.1"
   },
   "devDependencies": {
-    "eslint": "^10.5.0",
-    "eslint-plugin-eslint-plugin": "^7.4.0",
-    "vitest": "^4.1.9"
+    "eslint": "^10.14.0",
+    "eslint-plugin-eslint-plugin": "^7.6.2",
+    "vitest": "^5.1.0"
   },
   "peerDependencies": {
-    "eslint": "^10.5.0"
+    "eslint": "^10.14.0"
   }
 }
