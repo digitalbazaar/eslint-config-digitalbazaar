@@ -1,6 +1,6 @@
 # @digitalbazaar/eslint-config ChangeLog
 
-### 10.0.0 - 2026-11-xx
+### 10.0.0 - 2026-11-04
 
 ### Changed
 - **BREAKING**: Update dependencies:
